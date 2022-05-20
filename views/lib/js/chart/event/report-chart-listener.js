@@ -60,6 +60,7 @@ ReportChartListener.prototype.mouseInBar = function(chartEvent){
     else if(chartEvent.chartType === "Commissions Chart"){
         $('.commissions-tab #chart-popup').css({
             display: 'block',
+            zIndex: 99,
             overflow: 'hidden',
             left: barPoint.x + barPoint.width/2,
             get top(){return getTop();}

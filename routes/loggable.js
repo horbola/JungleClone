@@ -309,7 +309,39 @@ router.get('/help/forum', function(req, res, next) {
     }
 });
 
+router.get('/help/forum', function(req, res, next) {
+    if (req.app.locals.loggedIn) {
+        res.render('page/loggable/help-forum/help-forum', {
+            appUrl: req.app.locals.appUrl,
+            jsRes: req.app.locals.jsRes,
+            title: 'Amazon.com Associates Central - Discussion Boards'
+        });
+    } else {
+        res.render('page/ap/signin-a', {
+            appUrl: req.app.locals.appUrl,
+            jsRes: req.app.locals.jsRes,
+            title: 'Amazon Sign-In',
+            origUrl: '/help/forum'
+        });
+    }
+});
 
+router.get('/home/account/payment/history', function(req, res, next) {
+    if (req.app.locals.loggedIn) {
+        res.render('page/loggable/payment-history/payment-history', {
+            appUrl: req.app.locals.appUrl,
+            jsRes: req.app.locals.jsRes,
+            title: 'Amazon.com Associates Central - Payment History'
+        });
+    } else {
+        res.render('page/ap/signin-a', {
+            appUrl: req.app.locals.appUrl,
+            jsRes: req.app.locals.jsRes,
+            title: 'Amazon Sign-In',
+            origUrl: '/home/account/payment/history'
+        });
+    }
+});
 
 
 

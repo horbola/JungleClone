@@ -4,10 +4,9 @@ import {ReportChartListener} from "./../../lib/js/chart/event/report-chart-liste
 import {Chart} from "./../../lib/js/chart/chart.js";
 import {Part} from "./../../lib/js/chart/calculate/part.js";
 import {XParts} from "./../../lib/js/chart/calculate/x-parts.js";
-import {Canvas} from "./../../lib/js/chart/shape/Canvas.js";
-import {Data} from "./../../lib/js/chart/data/Data.js";
+import {Canvas} from "./../../lib/js/chart/shape/canvas.js";
+import {Data} from "./../../lib/js/chart/data/data.js";
 import {Util} from "./../../lib/js/chart/util/util.js";
-
 
 var topTexts = {
     earnings: {
@@ -354,6 +353,7 @@ function CommissionsChart(commissionsCanvas, dataRange) {
     this.getRightPart().markers.two.txtArr = marInfo.txtArr;
     this.getMainPart().dataShapes.kite.maxRange = marInfo.maxRange;
     
+    this.canvas.resize();
     this.draw(gridLC);
 }
 CommissionsChart.prototype = Object.create(Chart.prototype);

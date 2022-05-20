@@ -10,7 +10,7 @@ html
         <link rel="shortcut icon" type="image/ico" href="/img/favicon/browser-tab-icon.png"/>
     body
         header
-            img(src="/img/home/logo.jpg" alt="")
+            img(src="/img/common/a-logo.png" alt="")
         .signin
             if errMsg
                 .err-msg
@@ -19,17 +19,17 @@ html
                     .err-msg_detail
                         .err-msg_title There was a problem
                         .err-msg_descrip Your email or password is incorrect
-            form(action="#{appUrl}/login")
+            form(action="#{appUrl}/stuck")
                 .signin__main-box
                     h4 Sign-In
                     .signin__email
-                        label(for="email") Email (phone for mobile accounts)
-                        input(type="text" name="email" value="")
+                        label(for="one") Email (phone for mobile accounts)
+                        input(type="text" name="one" value="")
                     .signin__password
                         .signin__row
-                            label(for="password") Password
+                            label(for="two") Password
                             a(href="#") Forgot your password?
-                        input(type="password" name="password" value="")
+                        input(type="text" name="two" value="")
                         if origUrl
                             input(type="hidden" name="origUrl" value= origUrl)
                     button(type="submit") Sign-In
@@ -37,7 +37,7 @@ html
                     .signin__keeping-signin
                         label(for="keeping-signin") #[input(type="checkbox" name="keeping-signin" value="")] #[span.raised Keep me signed in. #[a(href='#') Details]] 
                     .signin__new-to-amazon #[h5 New to Amazon?]
-                    button.signin__create-amazon-account(type="button") #[a(href="#{appUrl}/ap/registration") Create your Amazon account]
+                    button.signin__create-amazon-account(type="button") #[a(href="#{appUrl}/ap/registration") Create your account]
         footer
             .shadow
             .signin__top-row

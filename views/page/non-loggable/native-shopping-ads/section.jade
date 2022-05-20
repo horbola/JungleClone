@@ -1,1 +1,250 @@
-p this is native shopping ads page
+#nat-global-alert-container.nat-global-alert-container.nat-page-wrapper
+.nat-page.nat-page-wrapper
+  #nat-nsa-header.nat-nsa-header
+    .nat-nsa-breadcrumbs
+      .nat-main-text.nat-heavy-font
+        a(href='#') Native Shopping Ads
+      .nat-nsa-create-ads
+        .nat-nsa-links-label
+          | CREATE
+        .nat-nsa-nav-item
+            a(href='#') Recommendation Ads
+        .nat-nsa-nav-item
+            a(href='#') Search Ads
+        .nat-nsa-nav-item
+            a(href='#') Custom Ads
+      .nat-nsa-quick-links
+        .nat-nsa-links-label
+          | QUICK LINKS
+        .nat-nsa-nav-item
+            a(href='#') Reports
+        .nat-nsa-nav-item
+          a(href='#') FAQs
+  .nat-card.nat-card-emphasized
+    .nat-card-content
+      #nat-ads-banner.nat-ads-banner
+        .nat-ads-banner-msg
+          .nat-ads-banner-text.nat-ads-banner-text-enabled
+          .nat-cms-content
+            .nat-ads-banner-text.nat-ads-banner-title.nat-cms-text-secondary
+              | Introducing Native Shopping Ads
+            .nat-ads-banner-text
+              | Seamlessly integrate highly relevant recommendations in a responsive ad unit to earn more.
+        .nat-ads-banner-interactive
+        span.a-declarative(data-action='ac-ads-banner-action' data-ac-ads-banner-action='{"type":"video"}')
+          .nat-ads-banner-play-icon
+        .nat-ads-banner-special-action.nat-hidden
+          span.a-declarative(data-action='ac-ads-banner-action' data-ac-ads-banner-action='{"type":"video_maximize"}')
+            .nat-ads-banner-special-icon.nat-ads-banner-maximize-icon
+          span.a-declarative(data-action='ac-ads-banner-action' data-ac-ads-banner-action='{"type":"video_pause"}')
+            .nat-ads-banner-special-icon.nat-ads-banner-close-icon
+  .nat-ads-slider-card.nat-card
+    .nat-card-content
+      #nat-ads-slider.nat-ads-slider.nat-ads-slider-slide-overview(data-ac-ads-selected-tab='overview' data-ac-ads-tab-list='[{"name":"overview"},{"name":"recommended_ads"},{"name":"search_ads"},{"name":"custom_ads"}]')
+        .nat-ads-slider-tabs
+          span.a-declarative(data-action='ac-ads-slider-select' data-ac-ads-slider-select='{"name":"overview"}')
+            a.nat-ads-slider-tab.nat-ads-slider-tab-first.nat-ads-slider-tab-selected(data-ac-ads-tab='overview')
+              | Native Shopping Ads - Overview
+          span.a-declarative(data-action='ac-ads-slider-select' data-ac-ads-slider-select='{"name":"recommended_ads"}')
+            a.nat-ads-slider-tab(data-ac-ads-tab='recommended_ads')
+              | Recommendation Ads
+          span.a-declarative(data-action='ac-ads-slider-select' data-ac-ads-slider-select='{"name":"search_ads"}')
+            a.nat-ads-slider-tab.nat-ads-slider-tab-last(data-ac-ads-tab='search_ads')
+              | Search Ads
+          span.a-declarative(data-action='ac-ads-slider-select' data-ac-ads-slider-select='{"name":"custom_ads"}')
+            a.nat-ads-slider-tab.nat-ads-slider-tab-last(data-ac-ads-tab='custom_ads')
+              | Custom Ads
+        .nat-ads-slider-content
+          .nat-ads-slider-tab-content(data-ac-ads-tab='overview')
+            // wlact
+            .nat-cms-content
+              .nat-ads-slide
+                .nat-ads-slide-title
+                  | Native Shopping Ads provide highly relevant and dynamic product recommendations in a stylishly designed and responsive ad unit that can be placed at the end of content or within the content to create a more compelling visitor experience and shopping opportunity
+                .nat-ads-slide-image.nat-ads-slide-image-alt
+                  img(src='../../img/non-loggable/native-shopping-ads/NSA_hero._CB488764446_.png' border='0' align='center' alt='Overview')
+                .nat-ads-slide-highlights
+                  ul
+                    li
+                      .nat-ads-slide-highlight-title
+                        | Relevant Recommendations
+                      .nat-ads-slide-highlight-text
+                        | Show the most relevant products to your visitors
+                    li
+                      .nat-ads-slide-highlight-title
+                        | Flexible Placement Options
+                      .nat-ads-slide-highlight-text
+                        | Place it at the end of content or within your content to enhance your editorial
+                    li
+                      .nat-ads-slide-highlight-title
+                        | Responsive
+                      .nat-ads-slide-highlight-text
+                        | Designed for a great experience on all device types - smartphones, tablets & desktops
+                    li
+                      .nat-ads-slide-highlight-title
+                        | Easy to implement
+                      .nat-ads-slide-highlight-text
+                        | Set once and forget for ease of implementation
+          .nat-ads-slider-hidden.nat-ads-slider-tab-content(data-ac-ads-tab='recommended_ads')
+            // wlact
+            .nat-cms-content
+              .nat-ads-slide.nat-ads-slide-alt
+                .nat-cms-cols-layout
+                  .nat-cms-col.nat-cms-col-width-50
+                    .nat-ads-slide-title
+                      | Place Native Shopping Ads in product article pages to automatically display relevant product recommendations from Amazon based on your page content and visiting users. It's mobile responsive so you can place it at the end of content and it will adapt based on the page container and device type.
+                      br
+                      br
+                      br
+                    .nat-ads-slide-highlights
+                      ul
+                        li
+                          .nat-ads-slide-highlight-title
+                            | Shop with Ease
+                          .nat-ads-slide-highlight-text
+                            | Offer recommendations that compliment your content for shopping ease
+                        li
+                          .nat-ads-slide-highlight-title
+                            | Customize Especially for You
+                          .nat-ads-slide-highlight-text
+                            | Refine the product recommendations by selecting category hints that align with your website
+                  .nat-cms-col.nat-cms-col-width-50
+                    .nat-ads-slide-image
+                      img(src='../../img/non-loggable/native-shopping-ads/recommendation-illustration-2x._V313310686_.png' border='0' align='center' alt='Overview')
+            .nat-ads-slide.nat-ads-slide-alt
+              .nat-ads-slide-more.nat-cms-padding-top-10
+                span.a-declarative(data-action='ac-ads-recommendation-tab-link' data-ac-ads-recommendation-tab-link='{"name":"create_recommendation_ad"}')
+                  a(href='#') Create Recommendation Ads
+                span.a-declarative(data-action='ac-ads-recommendation-tab-link' data-ac-ads-recommendation-tab-link='{"name":"recommendation_demo"}')
+                  a(aria-label='View Demo Blog' href='#' target='_blank')
+                    | View Demo Blog
+                span.a-declarative(data-action='ac-ads-recommendation-tab-link' data-ac-ads-recommendation-tab-link='{"name":"recommendation_faq"}')
+                  a(href='#' target='_blank') View all FAQs
+          .nat-ads-slider-hidden.nat-ads-slider-tab-content(data-ac-ads-tab='search_ads')
+            // wlact
+            .nat-cms-content
+              .nat-ads-slide.nat-ads-slide-alt
+                .nat-cms-cols-layout
+                  .nat-cms-col.nat-cms-col-width-50
+                    .nat-ads-slide-title
+                      | Native Shopping Ads allow your visitors to take advantage of search results from Amazon directly on your website. Include product recommendations based on search phrases or key words selected by you or entered by your visitors.
+                    .nat-ads-slide-highlights
+                      ul
+                        li
+                          .nat-ads-slide-highlight-title
+                            | Monetize Your Content
+                          .nat-ads-slide-highlight-text
+                            | Display products your visitors are ready to buy directly on your website
+                        li
+                          .nat-ads-slide-highlight-title
+                            | Implement Across Your Site with Ease
+                          .nat-ads-slide-highlight-text
+                            | Programmatically add on multiple pages by specifying search phrases pertinent to your website
+                  .nat-cms-col.nat-cms-col-width-50
+                    .nat-ads-slide-image
+                      img(src='../../img/non-loggable/native-shopping-ads/search-illustration-2x._V313311073_.png' border='0' align='center' alt='Overview')
+            .nat-ads-slide.nat-ads-slide-alt
+              .nat-ads-slide-more.nat-cms-padding-top-10
+                span.a-declarative(data-action='ac-ads-search-tab-link' data-ac-ads-search-tab-link='{"name":"create_search_ad"}')
+                  a(href='#') Create Search Ads
+                span.a-declarative(data-action='ac-ads-search-tab-link' data-ac-ads-search-tab-link='{"name":"search_demo"}')
+                  a(aria-label='View Demo Blog' href='#' target='_blank')
+                    | View Demo Blog
+                span.a-declarative(data-action='ac-ads-search-tab-link' data-ac-ads-search-tab-link='{"name":"search_faq"}')
+                  a(href='#' target='_blank') View all FAQs
+          .nat-ads-slider-hidden.nat-ads-slider-tab-content(data-ac-ads-tab='custom_ads')
+            // wlact
+            .nat-cms-content
+              .nat-ads-slide.nat-ads-slide-alt
+                .nat-cms-cols-layout
+                  .nat-cms-col.nat-cms-col-width-50
+                    .nat-ads-slide-title
+                      | Handpick your favorite products that you would like to promote and place the ad unit within your product article posts. It is flexible, elegant and adds to your content. Eg: My favourite cameras for 2015.
+                    .nat-ads-slide-highlights
+                      ul
+                        li
+                          .nat-ads-slide-highlight-title
+                            | Complement Your Content
+                          .nat-ads-slide-highlight-text
+                            | Curate products that complement your content for shopping ease
+                        li
+                          .nat-ads-slide-highlight-title
+                            | Flexible and Customisable
+                          .nat-ads-slide-highlight-text
+                            | Customize ad unit elements including the title to make it more compelling
+                  .nat-cms-col.nat-cms-col-width-50
+                    .nat-ads-slide-image
+                      img(src='../../img/non-loggable/native-shopping-ads/custom_illustration2x._V288230611_.png' border='0' align='center' alt='Overview')
+            .nat-ads-slide.nat-ads-slide-alt
+              .nat-ads-slide-more.nat-cms-padding-top-10
+                span.a-declarative(data-action='ac-ads-custom-tab-link' data-ac-ads-custom-tab-link='{"name":"create_custom_ad"}')
+                  a(href='#') Create Custom Ads
+                span.a-declarative(data-action='ac-ads-custom-tab-link' data-ac-ads-custom-tab-link='{"name":"custom_demo"}')
+                  a(aria-label='View Demo Blog' href='#' target='_blank')
+                    | View Demo Blog
+                span.a-declarative(data-action='ac-ads-custom-tab-link' data-ac-ads-custom-tab-link='{"name":"custom_faq"}')
+                  a(href='#' target='_blank') View all FAQs
+  .a-row.nat-card.nat-ads-case-study-card.a-ws-row
+    .nat-card-header.nat-card-header-alt
+      .nat-card-title-case-study.nat-card-title-main
+        | Case Study
+    .a-column.a-span12.a-spacing-none.a-ws-span12.a-ws-spacing-none
+      // wlact
+      .nat-cms-content
+        .nat-ads-promo-card
+          .nat-card-content.nat-card-content-alt
+            .nat-cms-cols-layout
+              .nat-cms-col.nat-cms-col-width-100
+                .nat-ads-case-study-text
+                  span.logo
+                    a(href='#' target='_blank')
+                      img(src='../../img/non-loggable/native-shopping-ads/Coffee_concierge_logo._V282688093_.png' border='0' align='center' alt='Coffee Concierge')
+                  p
+                    | Coffee Concierge earned 
+                    strong $8.71 eCPM
+                    br
+                    | and boosted earnings with Amazon Native Shopping Ads
+                  .nat-ads-case-study-link
+                    a(href='../../img/non-loggable/native-shopping-ads/NSA-CoffeeConcierge-CaseStudy._V271376090_.pdf' target='_blank')
+                      | View Case Study
+  .a-row.a-spacing-none.nat-card.nat-ads-testimonials-card.a-ws-row
+    .nat-card-header.nat-card-header-alt
+      .nat-card-title-testimonials.nat-card-title-main
+        | Testimonials
+    .a-column.a-span6.a-spacing-none.a-ws-span6.a-ws-spacing-none
+      // wlact
+      .nat-cms-content
+        .nat-ads-promo-card
+          .nat-card-content.nat-card-content-alt
+            .nat-cms-cols-layout
+              .nat-cms-col.nat-cms-col-width-30
+                img(src='../../img/non-loggable/native-shopping-ads/Alpha_Mom_logo._V315332062_.jpg' border='0' align='left' alt='Alphamom logo')
+              .nat-cms-col.nat-cms-col-width-70.nat-cms-text-secondary.nat-ads-promo-testimonial-text
+                | "I have been extremely impressed with the performance and the product relevance of Native Shopping Ads. It is easy to install and integrates very nicely with my website design (both desktop and mobile). The incremental revenue has allowed me to invest further in growing my business."
+              .nat-cms-col.nat-cms-col-width-100.nat-cms-padding-top-10
+                .nat-cms-text-bold
+                  | Isabel Kallman
+                .nat-cms-text-secondary
+                  | Founder & Chief, Alpha Mom
+                div
+                  a(href='#' target='_blank')
+    .a-column.a-span6.a-spacing-none.a-ws-span6.a-ws-spacing-none.a-span-last.a-ws-span-last
+      // wlact
+      .nat-cms-content
+        .nat-ads-promo-card
+          .nat-card-content.nat-card-content-alt
+            .nat-cms-cols-layout
+              .nat-cms-col.nat-cms-col-width-30
+                img(src='../../img/non-loggable/native-shopping-ads/androidauthoritylogo._V312734589_.jpg' border='0' align='left' alt='Android Authority Logo')
+              .nat-cms-col.nat-cms-col-width-70.nat-cms-text-secondary.nat-ads-promo-testimonial-text
+                | "Native Shopping Ads, placed on the bottom of our articles, have performed well.  The native ad blends well with our content and does not look like an advertisement which provides value to users browsing our articles."
+                br
+                br
+                br
+              .nat-cms-col.nat-cms-col-width-100.nat-cms-padding-top-10
+                .nat-cms-text-bold
+                  | Derek Scott
+                .nat-cms-text-secondary
+                  | Editor at Android Authority
+                div
+                  a(href='#' target='_blank')

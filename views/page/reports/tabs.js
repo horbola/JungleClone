@@ -36,6 +36,10 @@ Tabs.prototype.chngBounTabTxt = function(i, f){
 function changeTxt(context, i=100, f=.01){
     f = String(f).split('.');
     let text = "<sup>$</sup>" + i + "<sup>" + f[1] + "</sup>";
-    $(context).children('.amount').html(text);
+    $(context).children('.amount').html(numberWithCommas(text));
 }
 
+
+function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}

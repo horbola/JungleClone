@@ -4,8 +4,8 @@ import {ReportChartListener} from "./../../lib/js/chart/event/report-chart-liste
 import {Chart} from "./../../lib/js/chart/chart.js";
 import {Part} from "./../../lib/js/chart/calculate/part.js";
 import {XParts} from "./../../lib/js/chart/calculate/x-parts.js";
-import {Canvas} from "./../../lib/js/chart/shape/Canvas.js";
-import {Data} from "./../../lib/js/chart/data/Data.js";
+import {Canvas} from "./../../lib/js/chart/shape/canvas.js";
+import {Data} from "./../../lib/js/chart/data/data.js";
 import {Util} from "./../../lib/js/chart/util/util.js";
 
 
@@ -271,7 +271,8 @@ function BountiesChart(bountiesCanvas, dataRange) {
     marInfo = Util.makeMarInfo(max, Data.REFERRALS, Util.BOUNTIES_CHART);
     this.getRightPart().markers.one.txtArr = marInfo.txtArr;
     this.getMainPart().dataShapes.circle.maxRange = marInfo.maxRange;
-
+    
+    this.canvas.resize();
     this.draw(gridLC);
 }
 BountiesChart.prototype = Object.create(Chart.prototype);

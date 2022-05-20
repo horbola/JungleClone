@@ -1,6 +1,26 @@
 @import "../../../lib/scss/_lib.scss";
 
-p {
-    border: 1px solid red;
+.node-tp--ac-page-wrapper {
+    max-width: 1100px;
+    min-width: 980px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.node-tp--ac-page {
+    margin-top: 15px;
+    font-size: 1em;
+}
+.node-tp--ac-card {
+    border: 1px solid #DDD;
+    background-color: #fff;
+    margin-bottom: 15px;
+    box-shadow: 0px 1px 3px 0px rgb(0 0 0 / 5%);
+    border-radius: 2px;
+}
+.node-tp--ac-card-content {
+    margin-top: 0px;
 }
 
+.node-tp--ac-help-card {
+    padding: 15px;
+}

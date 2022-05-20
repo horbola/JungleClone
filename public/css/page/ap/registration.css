@@ -12,9 +12,10 @@ body, html {
 
 header {
   margin-bottom: 18px !important;
-  text-align: center; }
+  text-align: center;
+  margin-top: 10px; }
   header img {
-    width: 100px;
+    width: 103px;
     height: 31px; }
 
 .shadow {

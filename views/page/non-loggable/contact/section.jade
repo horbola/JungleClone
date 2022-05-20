@@ -1,1 +1,107 @@
-p this is contact page
+section#contact-middle
+  #con-global-alert-container.con-page-wrapper
+  .con-page.con-page-wrapper
+    // / creates the action notification items
+    .con-row.con-contact-introduction
+      .con-card
+        .con-card-header.con-card-header-primary
+          h1 Contact Associates Customer Service
+        .con-card-content.con-card-content-normal.con-overflow-auto
+          
+      .con-column.con-span12.con-spacing-none.con-ws-span12.con-ws-spacing-none
+        .con-card
+          .con-card-header.con-card-header-primary
+            h3 Email Amazon.com Associate Support:
+          .con-card-content.con-card-content-normal
+            .con-row.con-spacing-base.con-ws-row
+              .con-column.con-span12.con-spacing-none.con-ws-span12.con-ws-spacing-none
+                | Please fill out the form below. Click the Send E-mail button when done.
+            form#con-contact-form
+              .con-row.con-spacing-base.con-ws-row
+                .con-column.con-span12.con-spacing-none.con-ws-span12.con-ws-spacing-none
+                    label.con-form-label Your Name:
+                      span.con-mandatory *
+                    input#con-contact-form-name-input.con-input-text.con-width-extra-large(type='text' required)
+              .con-row.con-spacing-base.con-ws-row
+                .con-column.con-span12.con-spacing-none.con-ws-span12.con-ws-spacing-none
+                    label.con-form-label Primary E-mail Address:
+                      span.con-mandatory *
+                    input#con-contact-form-email-input.con-input-text.con-width-extra-large(type='text' required)
+                    span.con-size-small.con-color-tertiary.con-contact-input-msg
+                      | Please enter the e-mail address associated with your Amazon.com Associates account.
+              .con-row.con-spacing-base.con-ws-row
+                .con-column.con-span12.con-spacing-none.con-ws-span12.con-ws-spacing-none
+                  label#con-contact-select-subject.con-form-label Subject:
+                    span.con-mandatory *
+                  span.con-declarative
+                    span.con-dropdown-container
+                      select#con-contact-subject-dropdown.con-native-dropdown
+                        option.con-prompt Please Select a Subject
+                        option Amazon Influencer Program
+                        option Application Follow-up
+                        option Associates Central Website Feedback
+                        option Closed Account Appeal
+                        option Linking
+                        option Native Shopping Ads
+                        option Operating Agreement and Rates
+                        option Other Questions & Comments
+                        option Pre-membership Inquiry
+                        option Product Advertising API
+                        option Product Feeds
+                        option Program Feedback
+                        option Warning/Information Request Response
+              #con-contact-account-specific-fields
+                .con-row.con-spacing-base.con-ws-row
+                  .con-column.con-span12.con-spacing-none.con-ws-span12.con-ws-spacing-none
+                    label.con-form-label Associate ID:
+                      span.con-size-small.con-color-tertiary.con-contact-label-msg (recommended)
+                    input#con-contact-form-storeid-input.con-input-text.con-width-extra-large(type='text')
+                .con-row.con-spacing-base.con-ws-row
+                  .con-column.con-span12.con-spacing-none.con-ws-span12.con-ws-spacing-none
+                    label.con-form-label Website URL:
+                      span.con-size-small.con-color-tertiary.con-contact-label-msg (recommended)
+                    input#con-contact-form-url-input.con-input-text.con-width-extra-large
+                .con-row.con-spacing-base.con-ws-row
+                  .con-column.con-span12.con-spacing-none.con-ws-span12.con-ws-spacing-none
+                    label.con-form-label Payee Name:
+                      span.con-size-small.con-color-tertiary.con-contact-label-msg (optional)
+                    input#con-contact-form-payeename-input.con-input-text.con-width-extra-large(type='text')
+                    span.con-size-small.con-color-tertiary.con-contact-input-msg
+                      | This is the name used to set up the account
+              #con-contact-additional-detail-fields
+                .con-row.con-spacing-large.con-ws-row
+                  .con-column.con-span12.con-spacing-none.con-ws-span12.con-ws-spacing-none
+                    label.con-form-label Comments:
+                      span.con-mandatory *
+                    .con-input-text-wrapper.con-span8
+                      textarea#con-contact-form-comments-input(required rows='5')
+                .con-row.con-spacing-base.con-ws-row
+                  .con-column.con-span12.con-spacing-none.con-ws-span12.con-ws-spacing-none
+                    | By typing the characters you see into the box, you help Amazon prevent automated
+                    | or scripted form submissions. This enables us to prevent fraud and abuse so that
+                    | we may continue to ensure a high quality of service to all customers.
+                #con-contact-captcha-container.con-captcha-container
+                  .con-row.con-spacing-base.con-ws-row
+                    .con-column.con-span12.con-spacing-none.con-ws-span12.con-ws-spacing-none
+                      .con-image-captcha
+                          a.con-link-normal.conok-align-bottom Try a different image
+                  .con-row.con-spacing-base.con-ws-row
+                    .con-column.con-span12.con-spacing-none.con-ws-span12.con-ws-spacing-none
+                      .con-captcha-toggle-form
+                        label.con-form-label
+                            input#enable_audio_captcha.con-captcha-toggle(type='checkbox')
+                            |         Try audio captcha
+                  .con-row.con-spacing-base.con-ws-row
+                    .con-column.con-span12.con-spacing-none.con-ws-span12.con-ws-spacing-none
+                      .con-image-captcha-label
+                        label.con-form-label
+                          | Type the characters in the above image
+                          span.con-mandatory *
+                      input#con-signup-sb-captcha-response-input.con-input-text.con-captcha-response(type='text' required)
+                      .con-captcha-error.con-hidden
+                .con-row.con-spacing-base.con-ws-row
+                  .con-column.con-span12.con-spacing-none.con-ws-span12.con-ws-spacing-none
+                      span#con-contact-send-email.con-button.con-button-primary
+                        span.con-button-inner
+                          input.con-button-input(type='submit')
+                          span#con-contact-send-email-announce.con-button-text Send E-mail

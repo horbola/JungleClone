@@ -1,0 +1,95 @@
+
+* To change stall name:
+    1) go to this file - ****views/page/reports/tracking-id-panel.jade****
+    2) note some lines like this - li #[span.rect-out #[span.rect-fill]] All
+    3) the last word after the closing bracket in each line is the stall name.
+    4) here, that is 'All'. change this to the name you desire.
+       example: li #[span.rect-out #[span.rect-fill]] New Name
+    5) note: you can not change any name which are the folder name located
+       here- ****views/lib/js/chart/data or anywhere else inside the code****
+       so you have to keep track of which folder represents which name in
+       the HTML(jade) page mentioned in step 1.
+    6) suggestion: maintain a list of - [stall id : folder name : custom name].
+       example follows below (do not edit this example, rather, maintain a separate file) -
+       
+       stall id         folder name     custom name
+       -----------------------------------------------------
+       li-00		stall-00        All
+       li-01		stall-01        guidel-20
+       li-02		stall-02        comparisontalk-20
+       li-03		stall-03        autonerdy-20
+       li-04		stall-04        scienceselector-20
+       li-05		stall-05        bestob-20
+       li-06		stall-06        housetactical-20
+       li-07		stall-07        homeguidezone-20
+       li-08		stall-08        proreviewbuzznew-20
+       li-09		stall-09        5cyclingnew-20
+       li-10		stall-10        brz04-20-Edited
+       li-11		stall-11        staplesearchnew-20
+       li-12		stall-12        autonerdsreview-20
+       li-13		stall-13        prh03-20
+       li-14		stall-14        reviewertouch-20
+       li-15		stall-15        mysv-20
+       -----------------------------------------------------
+        
+        
+
+
+
+
+* To change data:
+    1) Note 1: you enter data month-wise. from those month data, data for each day
+       will be automatically generated. each stall contains data for 12 months. this
+       12 month's data will be shown for each new year mimicking the original data in a
+       real case, dates and year will be updated automatically.
+
+    2) Note 2: there is a file for each month containing the data you will enter. that
+       file is named after the month name for which data needs to be generated. for
+       example, if original data is situated in a file named 'jan.js' then the file name in
+       which you will enter your data would be 'jan-config.js'. all 12 month's configuration data
+       for a stall are contained in a folder named after that stall. and all stall folders
+       are contained within this root folder:- ****js/control/data-generator/data-config****.
+       Original data which are used by the chart and are generated automatically from your entered
+       'config data' are located in this folder: ****views/lib/js/chart/data****
+       
+    3) open any configuration file in any stall, such as jan-config.js in 5cyclingnew-20.
+       (path: ****js/control/data-generator/data-config/5cyclingnew-20/jan-config.js****)
+
+    4) note these data types: clicks, ordered_items, sell_earnings, commissions, bounties, referrals
+                              referral_earnings, shipped, returned, shippedRev, bonus.
+       each of these data type has four configuration options: dataType, gross, diviation and breakPoints.
+       change only the 'gross' option on yourself and change other options in an advance case or
+       with the help of your developer firm.
+       (here sell_earnings and commissions are same. so put the same number in both types.)
+       (bounties and referral_earnings are same. don't put any number in referral_earnings)
+
+    5) change the value of 'gross' option as you want for each type necessary for you. for example,
+       in 'jan-config.js', change 'gross: 50091' of 'clicks' to 'gross: 70000'. restart your nodejs app
+       in your server.
+
+    6) after changing in all files you needed, bring the page in a browser mentioned below.
+       page link: **** https://affiliate-program-amz.com/admin/update-data ****
+       click on the 'Update Data' button and restart your nodejs app in your server.
+
+    7) go to app edit page in your server. find and click on '|> Run js script' button. select 'build'
+       from the popup window if it's not selected. click on '|> RUN JS SCRIPT' button on the same popup
+       window. wait to finish and restart your nodejs app in your server.
+    
+    8) Note 3: you are restarting the server actually 3 times for each change in your configuration file.
+       this is the restarting order: a- after changing in any configuration file
+                                     b- after pressing the update button
+                                     c- after pressing (second time) the '|> RUN JS SCRIPT' button
+
+
+
+
+* To change user id and password:
+    1) open ****routes/index.js**** file
+    2) find this line: 'if(emailStr === 'iqbalhossain9069@gmail.com' && passwordStr === '123Saiza@@@'){'
+       may be on line number 19.
+    3) change the email address from 'iqbalhossain9069@gmail.com' to the address you want and
+       change the password from '123Saiza@@@' to the password you want
+
+
+
+

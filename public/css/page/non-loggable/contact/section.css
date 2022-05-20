@@ -1,2 +1,337 @@
-p {
-  border: 1px solid red; }
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+#contact-middle {
+  border: none; }
+
+#contact-middle input {
+  margin-left: 0.385em; }
+
+.con-input-text,
+#contact-middle input[type=text],
+#contact-middle select.con-select-multiple,
+#contact-middle textarea {
+  border: 1px solid #a6a6a6;
+  border-top-color: #949494;
+  border-radius: 3px;
+  box-shadow: 0 1px 0 #ffffff80, 0 1px 0 #00000012 inset;
+  outline: 0; }
+
+.con-input-text.con-form-focus,
+.con-input-text:focus,
+#contact-middle input[type=text].con-form-focus,
+#contact-middle input[type=text]:focus,
+#contact-middle select.con-select-multiple:focus,
+#contact-middle textarea.con-form-focus,
+#contact-middle textarea:focus {
+  border-color: #e77600;
+  box-shadow: 0 0 3px 2px rgba(228, 121, 17, 0.5); }
+
+#contact-middle input[type=text] input.con-form-error,
+#contact-middle input[type=text].con-form-error,
+#contact-middle select.con-select-multiple input.con-form-error,
+#contact-middle select.con-select-multiple.con-form-error,
+#contact-middle textarea input.con-form-error,
+#contact-middle textarea.con-form-error {
+  border-color: #d00;
+  box-shadow: 0 0 0 3px rgba(221, 0, 0, 0.1) inset; }
+
+.con-input-text input.con-form-warning,
+.con-input-text.con-form-warning,
+#contact-middle input[type=text] input.con-form-warning,
+#contact-middle input[type=text].con-form-warning,
+#contact-middle select.con-select-multiple input.con-form-warning,
+#contact-middle select.con-select-multiple.con-form-warning,
+#contact-middle textarea input.con-form-warning,
+#contact-middle textarea.con-form-warning {
+  border-color: #8c6e00;
+  box-shadow: 0 0 0 3px rgba(255, 214, 63, 0.1) inset; }
+
+.con-input-text.con-form-disabled,
+#contact-middle input[type=text].con-form-disabled,
+#contact-middle select.con-select-multiple.con-form-disabled,
+#contact-middle textarea.con-form-disabled {
+  border-color: rgba(186, 186, 186, 0.5);
+  background-color: #f3f3f3;
+  box-shadow: none;
+  cursor: not-allowed; }
+
+.con-input-text.con-form-disabled input,
+#contact-middle input[type=text].con-form-disabled input,
+#contact-middle select.con-select-multiple.con-form-disabled input,
+#contact-middle textarea.con-form-disabled input {
+  color: #767676; }
+
+#contact-middle input,
+#contact-middle select,
+#contact-middle textarea {
+  -webkit-transition: all .1s linear;
+  transition: all .1s linear;
+  line-height: 19px;
+  color: #111; }
+
+#contact-middle textarea {
+  background-color: #fff;
+  width: 100%;
+  padding: 5px 7px;
+  resize: vertical; }
+
+.con-input-text,
+#contact-middle input[type=text] {
+  background-color: #fff;
+  height: 31px;
+  padding: 3px 7px;
+  line-height: normal; }
+
+.con-page-wrapper {
+  max-width: 1100px;
+  min-width: 980px;
+  margin: 0 auto;
+  padding: 0 15px; }
+
+.con-page {
+  margin-top: 15px;
+  font-size: 1em; }
+
+.con-row {
+  width: 100%; }
+
+.con-card {
+  border: 1px solid #DDD;
+  background-color: #fff;
+  margin-bottom: 15px;
+  box-shadow: 0px 1px 3px 0px #0000000d;
+  border-radius: 2px; }
+
+.con-card-header-primary {
+  padding: 15px 15px 0px 15px; }
+
+.con-card-header {
+  display: inline-block;
+  width: 100%;
+  position: relative; }
+
+#contact-middle h1:last-child, #contact-middle h3:last-child {
+  padding-bottom: 0; }
+
+#contact-middle h1 {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.2;
+  padding-bottom: 4px; }
+
+#contact-middle h1, #contact-middle h3 {
+  padding-bottom: 4px;
+  padding: 0;
+  margin: 0;
+  color: #C45500; }
+
+#contact-middle h3 {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 1.255; }
+
+.con-overflow-auto {
+  overflow: auto; }
+
+.con-card-content-normal {
+  padding: 15px; }
+
+.con-card-content {
+  margin-top: 0px; }
+
+.con-row .con-span12, .con-span12, .con-ws .con-row .con-ws-span12, .con-ws .con-ws-span12 {
+  width: 100%;
+  margin-right: 0; }
+
+.con-row .con-span8, .con-ws .con-row .con-ws-span8 {
+  width: 65.948%; }
+
+.con-ws div.con-column, div.con-column {
+  margin-right: 2%;
+  float: left;
+  min-height: 1px;
+  overflow: visible;
+  _float: left !important; }
+
+.con-spacing-none, .con-ws .con-ws-spacing-none {
+  margin-bottom: 0 !important; }
+
+.con-spacing-base, .con-ws .con-ws-spacing-base {
+  margin-bottom: 14px !important; }
+
+#contact-middle form {
+  margin-bottom: 14px; }
+
+#contact-middle .con-span12 input {
+  float: none;
+  margin-right: 0; }
+
+#contact-middle input, #contact-middle select, #contact-middle textarea {
+  -webkit-transition: all .1s linear;
+  transition: all .1s linear;
+  line-height: 19px;
+  color: #111; }
+
+#contact-middle input, #contact-middle select, #contact-middle textarea {
+  margin: 0;
+  font-size: 100%;
+  vertical-align: middle;
+  font-family: inherit; }
+
+#contact-middle select {
+  word-wrap: normal; }
+
+#contact-middle select {
+  text-transform: none; }
+
+#contact-middle input {
+  overflow: visible; }
+
+.con-form-label {
+  font-weight: 700; }
+
+label {
+  display: block;
+  padding-left: 2px;
+  padding-bottom: 2px;
+  font-weight: 700;
+  margin-bottom: 0.5rem; }
+
+.con-mandatory {
+  color: #db2022; }
+
+.con-input-text, #contact-middle input[type=text], #contact-middle input[type=search] {
+  background-color: #fff;
+  height: 31px;
+  padding: 3px 7px;
+  line-height: normal; }
+
+.con-input-text, #contact-middle input[type=text], #contact-middle input[type=search] select.con-select-multiple, #contact-middle textarea {
+  border: 1px solid #a6a6a6;
+  border-top-color: #949494;
+  border-radius: 3px;
+  box-shadow: 0 1px 0 #ffffff80, 0 1px 0 #00000012 inset;
+  outline: 0; }
+
+.con-width-extra-large {
+  width: 400px !important; }
+
+.con-dropdown-container {
+  position: relative; }
+
+.con-native-dropdown {
+  max-width: 100%;
+  background-color: #d0d5de;
+  border-radius: 5px;
+  padding: 7px; }
+
+.con-color-tertiary {
+  color: #767676 !important; }
+
+.con-size-small {
+  font-size: 12px !important;
+  display: block;
+  line-height: 1.5 !important; }
+
+.con-hidden {
+  display: none; }
+
+#contact-middle textarea {
+  background-color: #fff;
+  width: 100%;
+  padding: 5px 7px;
+  resize: vertical; }
+
+.con-align-bottom, .conok-align-bottom {
+  vertical-align: bottom !important; }
+
+#contact-middle input[type=checkbox] {
+  padding: 0; }
+
+#contact-middle input[type=checkbox] {
+  height: 13px;
+  width: 13px;
+  vertical-align: top;
+  position: relative;
+  bottom: -3px; }
+
+.con-button-primary {
+  background: #f0c14b;
+  border-color: #a88734 #9c7e31 #846a29;
+  color: #111; }
+
+.con-button {
+  background: #e7e9ec;
+  border-radius: 3px;
+  border-color: #ADB1B8 #A2A6AC #8D9096;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+  padding: 0;
+  text-align: center;
+  text-decoration: none !important;
+  vertical-align: middle; }
+
+.con-button-primary .con-button-inner {
+  box-shadow: 0 1px 0 #ffffff66 inset; }
+
+.con-button-primary .con-button-inner {
+  background: #f4d078;
+  background: -webkit-linear-gradient(top, #f7dfa5, #f0c14b);
+  background: linear-gradient(to bottom, #f7dfa5, #f0c14b); }
+
+.con-button-inner {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  height: 29px;
+  box-shadow: 0 1px 0 #ffffff99 inset;
+  border-radius: 2px; }
+
+.con-button-primary .con-button-text {
+  color: #111; }
+
+.con-button .con-button-text {
+  color: #111; }
+
+.con-button-text {
+  background-color: transparent;
+  border: 0;
+  display: block;
+  font-size: 13px;
+  line-height: 29px;
+  margin: 0;
+  outline: 0;
+  padding: 0 10px 0 11px;
+  text-align: center;
+  white-space: nowrap; }
+
+.con-row:after {
+  clear: both; }
+
+.con-row:after, .con-row:before {
+  display: table;
+  content: "";
+  line-height: 0;
+  font-size: 0; }
+
+.con-button-input {
+  position: absolute;
+  background-color: transparent;
+  color: transparent;
+  border: 0;
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  opacity: .01;
+  filter: alpha(opacity=1);
+  outline: 0;
+  overflow: visible;
+  z-index: 20; }

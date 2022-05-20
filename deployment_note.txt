@@ -1,7 +1,51 @@
-to make it live accessible from server we must change the following variables.
-1. in app.js change:
-    a) appUrl,
-    b) appName,
-    c) jsRes
-2. in reports.js change:
-    a) appUrlLocal
+
+On local
+--------------------------------------------------------------------------
+* To test or run this website on your local machine:
+    1) install nodejs on your machine from this url:- https://nodejs.org/en/download/
+    1.1) select Windows Installer (.msi) 64 bit and download will start automaticaly.
+    1.2) find from your download folder and double click on the file named 'node-v14.15.1-x64.msi' and installation will start and follow the instruction
+    1.3) but at the time of 5th 'popup window' check on the box showing this message- "Automatically install the necessary tools.
+                                                                                       Note that this will also install Chocolatey.
+                                                                                       The script will pop-up in a new window after
+                                                                                       the installation completes."
+    1.4) a 'command propmt' will open. press any key from keyboard when it will ask and latter press 'enter' key to exit when it will finish.
+    1.5) restart your machine
+
+    2) Start command prompt or powershell in the folder where 'package.json' file is located (this file is in the root project folder)
+       by pressing these two buttons together:- 'mouse right button' and 'shift key from keyboard'
+    3) Start nodejs from command line with this command:- node bin/www
+    4) Browse the website by entering this url into any browser:- http://localhost:3000/AmazAffClone
+
+
+* To stop this website:
+    1) Stop nodejs from command prompt or powershell by pressing these two keys together:- CTRL+C
+    2) Stop command prompt or powershell  by pressing these two keys together:- Alt+F4 (or type “exit” at the prompt)
+    3) uninstall nodejs from your machine
+
+
+
+
+
+On live
+--------------------------------------------------------------------------
+
+* To setup nodejs app on live server:
+    1) place the root folder in home directory of server and delete node_modules folder.
+    2) create a nodejs app and bring the app edit page.
+    3) in 'Node.js version' field select the appropriate nodejs version.
+    4) in 'Application mode' field select 'Development'.
+    5) in 'Application root' field enter root folder name of the app.
+    6) in 'Application startup file' field enter startup file path without preceding the
+       root folder name and any slash. in case of nodejs app created with 'express generator',
+       the startup file path which should be put in a2hosting is 'bin/www'.
+    7) press 'Run NPM Install' button to install node modules.
+    8) press 'Run JS script' to transpile js files with webpack build.
+
+
+* To make it accessible live from server we must change the following variables.
+    1) in app.js change:
+        a. appUrl,
+        b. appName,
+        c. jsRes
+

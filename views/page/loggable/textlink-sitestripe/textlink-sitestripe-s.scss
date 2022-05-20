@@ -1,3 +1,42 @@
 @import "../../../reboot/main.scss";
 @import "../../../layout/main/main-s.scss";
 @import "section.scss";
+
+/* .mainbody{
+    min-height: 30px;
+} */
+.ac-card1{
+    border: 1px solid #DDD;
+    background-color: #fff;
+    
+    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.05);
+    border-radius: 2px;
+    height: 363px;
+    
+}
+.ac-card-title{
+    color: #000000;
+    font-size: 1.4em;
+    padding: 12px 5px 5px 12px;
+    position: relative;
+}
+.b{
+    font-size: 1.1em;
+}
+.ac-card-title > p{
+    float: right;
+    font-size: 13px;
+    
+}
+.ac-card-texte{
+    padding: 13px 5px 5px 10px;
+}
+.ac-card-texte > p{
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.ac-bottom{
+    padding: 20px;
+    
+}

@@ -4,16 +4,16 @@ console.log('data-genocontroller.js entered');
 var fs = require('fs');
 let DataGenerator = require("./data-generator");
 
-
-
-
 function DataGenController(){}
 
 
 
 let dataGenerator = new DataGenerator();
 DataGenController.prototype.genMonthData = function(dataConfigPath){
+    console.log(dataConfigPath);
     let aMonthDataConfig = require(dataConfigPath);
+    // setting data config options
+    // setConfigOpt(dataConfigPath, aMonthDataConfig);
     let monthData = aMonthDataConfig.monthData;
     
     let configs = Object.values(aMonthDataConfig);
@@ -23,6 +23,7 @@ DataGenController.prototype.genMonthData = function(dataConfigPath){
     
     monthData = JSON.stringify(monthData, null, 4);
     monthData = formatFileData(aMonthDataConfig.monthName, monthData);
+    console.log(aMonthDataConfig.filePath);
     writeFileContent(aMonthDataConfig.filePath, monthData);
 };
 
@@ -36,19 +37,12 @@ DataGenController.prototype.genStallData = function(){
 
 
 
-
-
 function writeFileContent(filePath, data){
     fs.writeFile(filePath, data, function(err){
         if(err) return console.error(err);
     });
 }
 
-function makeDir(dirPath){
-    fs.mkdir(dirPath, function(err){
-        if(err) return console.error(err);
-    });
-}
 
 function formatFileData(monthName, dataObj){
     let monthData = `export let ${monthName} = ${dataObj};`;
@@ -57,4 +51,9 @@ function formatFileData(monthName, dataObj){
 
 
 
+
 module.exports = DataGenController;
+
+
+
+

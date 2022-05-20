@@ -53,7 +53,8 @@ section.tabs .tabs-wrapper .sec-header .days {
   section.tabs .tabs-wrapper .sec-header .days .index .tracking-id-model {
     padding-bottom: 10px; }
     section.tabs .tabs-wrapper .sec-header .days .index .tracking-id-model:hover .tracking-id-panel {
-      display: block; }
+      display: block;
+      z-index: 100; }
   section.tabs .tabs-wrapper .sec-header .days .index .range, section.tabs .tabs-wrapper .sec-header .days .index .tracking-id {
     color: #0066c0; }
     section.tabs .tabs-wrapper .sec-header .days .index .range:hover, section.tabs .tabs-wrapper .sec-header .days .index .tracking-id:hover {
