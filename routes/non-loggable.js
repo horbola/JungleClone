@@ -201,13 +201,6 @@ router.get('/node/topic/GRXPHT8U84RAYDXZ-footer', function(req, res, next) {
     });
 });
 
-router.get('/home/account/payment/history', function(req, res, next) {
-    res.render('page/non-loggable//', {
-        appUrl: req.app.locals.appUrl,
-        jsRes: req.app.locals.jsRes,
-        title: 'Amazon.com Associates Central - Payment History'
-    });
-});
 
 router.get('/resource-center/receive-your-international-affiliate-earnings-in-your-local-bank', function(req, res, next) {
     res.render('page/non-loggable/receive-your-earnings/receive-your-earnings', {

@@ -93,6 +93,13 @@ Canvas.prototype.getContext = function(){
     return this.canvasArea.getContext("2d");
 };
 
+Canvas.prototype.resize = function () {
+    let w = this.getContext().canvas.width;
+    let h = this.getContext().canvas.height;
+    this.getContext().canvas.width = w;
+    this.getContext().canvas.height = h;
+};
+
 // creates a context on the fly for some utility operation.
 Canvas.prototype.createContext = function(){
     return document.createElement('canvas').getContext('2d');

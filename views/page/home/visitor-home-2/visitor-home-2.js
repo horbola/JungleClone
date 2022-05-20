@@ -1,8 +1,6 @@
 
 import {VisitorHome2Carosel} from "./carousel.js"
 
-
-
 var slideCont = "#caro .slider .image-container";
 var slides = "#caro .slider .image-container img";
 var circleSelector = "#caro .dots .circle";

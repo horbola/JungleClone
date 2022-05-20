@@ -4,8 +4,8 @@ import {ReportChartListener} from "./../../../lib/js/chart/event/report-chart-li
 import {Chart} from "./../../../lib/js/chart/chart.js";
 import {Part} from "./../../../lib/js/chart/calculate/part.js";
 import {XParts} from "./../../../lib/js/chart/calculate/x-parts.js";
-import {Data} from "./../../../lib/js/chart/data/Data.js";
-import {Canvas} from "./../../../lib/js/chart/shape/Canvas.js";
+import {Data} from "./../../../lib/js/chart/data/data.js";
+import {Canvas} from "./../../../lib/js/chart/shape/canvas.js";
 import {Util} from "./../../../lib/js/chart/util/util.js";
 
 

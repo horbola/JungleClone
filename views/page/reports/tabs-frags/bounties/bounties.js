@@ -44,7 +44,7 @@ Bounties.prototype.changeTotEar = function (amount) {
     this.changeTxt(this.totEarSel, '$'+amount);
 };
 Bounties.prototype.changeTxt = function (childSel, amount) {
-    $(this.bottomInfoParentSel).find(childSel).text(amount);
+    $(this.bottomInfoParentSel).find(childSel).text(numberWithCommas(amount));
 };
 
 
@@ -104,3 +104,10 @@ Bounties.prototype.updateTitleDate = function(){
     }
     $(this.titleDate).text(splits[0]);
 };
+
+
+
+function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+

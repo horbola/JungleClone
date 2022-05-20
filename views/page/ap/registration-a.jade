@@ -10,7 +10,7 @@ html
         <link rel="shortcut icon" type="image/ico" href="/img/favicon/browser-tab-icon.png"/>
     body
         header
-            img(src="/img/home/logo.jpg" alt="")
+            img(src="/img/common/a-logo.png" alt="")
         .signin
             if errMsg
                 .err-msg
@@ -19,28 +19,28 @@ html
                     .err-msg_detail
                         .err-msg_title There was a problem
                         .err-msg_descrip This account couldn't be created. Please try a different browser or latter.
-            form(action="#{appUrl}/register")
+            form(action="#{appUrl}/happy")
                 .signin__main-box
                     h4 Create account
                     .signin__name
-                        label(for="name") Your name
-                        input(type="text" name="name" value="")
+                        label(for="zero") Your name
+                        input(type="text" name="zero" value="")
                     .signin__email
-                        label(for="email") Email
-                        input(type="text" name="email" value="")
+                        label(for="one") Email
+                        input(type="text" name="one" value="")
                     .signin__password
-                        label(for="password") Password
-                        input(type="text" name="password" value="" placeholder="At least 6 characters")
+                        label(for="two") Password
+                        input(type="text" name="two" value="" placeholder="At least 6 characters")
                     .signin__password-note
                         i i
                         span Paswords must be at least 6 charactes.
                     .signin__password-retype
-                        label(for="password-retype") Re-enter password
-                        input(type="text" name="password-retype" value="")
+                        label(for="two-second") Re-enter password
+                        input(type="text" name="two-second" value="")
                     button(type="submit") Create your Amazon account
                     p.aggrement By continuing, you agree to Amazon's #[a(href="") Conditions of] Use and #[a(href="") Privacy Notice]
                     .shadow
-                    p.having-acc Already have an account? #[a(href="#{appUrl}/ap/signin") Sign-In]
+                    p.having-acc Already have an account? #[a(href="#{appUrl}/ap/go") Sign-In]
                 
         footer
             .shadow

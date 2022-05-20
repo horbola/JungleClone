@@ -1,171 +1,176 @@
-.sum-bottom-info {
-  margin-top: 15px; }
-  .sum-bottom-info .left-part {
-    flex-basis: 50%;
-    margin-right: 10px; }
-    .sum-bottom-info .left-part .com-sum .header {
-      font-size: 14px;
-      font-weight: 700;
-      color: #c45500;
-      padding-top: 10px;
-      padding-bottom: 15px; }
-    .sum-bottom-info .left-part .com-sum .main > * {
-      flex-basis: 100%;
-      flex-grow: 1;
-      flex-shrink: 1; }
-    .sum-bottom-info .left-part .com-sum .main .box {
-      border: 1px solid #e0e0e0;
-      border-right: none;
-      padding: 10px; }
-      .sum-bottom-info .left-part .com-sum .main .box:first-child {
-        border-left: none;
-        margin-left: -11px; }
-      .sum-bottom-info .left-part .com-sum .main .box:last-child {
-        border-right: none;
-        margin-right: -11px; }
-    .sum-bottom-info .left-part .com-sum .main .title {
-      padding-bottom: 30px;
-      font-size: 13px;
-      font-weight: 600;
-      color: #666; }
-    .sum-bottom-info .left-part .com-sum .main .amount {
-      font-size: 13px;
-      font-weight: 600;
-      color: #444; }
-    .sum-bottom-info .left-part .com-sum .footer {
-      text-align: center;
-      padding-top: 10px;
-      padding-bottom: 5px; }
-      .sum-bottom-info .left-part .com-sum .footer .total {
-        padding-left: 30px;
-        font-size: 18px;
-        font-weight: 700; }
-        .sum-bottom-info .left-part .com-sum .footer .total .tag {
-          font-size: 12px;
-          color: #777; }
-      .sum-bottom-info .left-part .com-sum .footer .amount {
-        float: right;
-        padding-right: 15px;
-        font-size: 17px;
-        font-weight: 700; }
-    .sum-bottom-info .left-part .boun-sum {
-      font-size: 14px;
-      font-weight: 700;
-      color: #c45500;
-      padding-top: 10px;
-      padding-bottom: 15px; }
-      .sum-bottom-info .left-part .boun-sum .header {
+.sum-bottom-info-wrapper {
+  margin: 0 -12px -12px -12px;
+  background-color: #f3f3f3;
+  border: 1px solid #f3f3f3;
+  border-top: 1px solid #DDD; }
+  .sum-bottom-info-wrapper .sum-bottom-info {
+    margin-top: 15px; }
+    .sum-bottom-info-wrapper .sum-bottom-info .left-part {
+      flex-basis: 50%;
+      margin-right: 10px; }
+      .sum-bottom-info-wrapper .sum-bottom-info .left-part .com-sum .header {
         font-size: 14px;
         font-weight: 700;
         color: #c45500;
         padding-top: 10px;
         padding-bottom: 15px; }
-      .sum-bottom-info .left-part .boun-sum .main {
-        border-top: 1px solid #e0e0e0;
-        margin-left: -11px;
-        margin-right: -11px; }
-        .sum-bottom-info .left-part .boun-sum .main .box {
-          padding: 10px; }
-        .sum-bottom-info .left-part .boun-sum .main .title {
-          padding-bottom: 30px;
-          font-size: 13px;
-          font-weight: 600;
-          color: #888; }
-        .sum-bottom-info .left-part .boun-sum .main .amount {
-          font-size: 13px;
-          font-weight: 600;
-          color: #444; }
-        .sum-bottom-info .left-part .boun-sum .main .total-refs {
-          flex-basis: 70%;
-          border-right: 1px solid #e0e0e0; }
-        .sum-bottom-info .left-part .boun-sum .main .total-earnings {
-          flex-basis: 30%; }
-          .sum-bottom-info .left-part .boun-sum .main .total-earnings .title {
-            color: #444; }
-          .sum-bottom-info .left-part .boun-sum .main .total-earnings .amount {
-            color: #009900;
-            font-size: 1.2em; }
-    .sum-bottom-info .left-part .ear-sum .main .title {
-      font-size: 14px;
-      font-weight: 700;
-      color: #c45500;
-      flex-basis: 70%;
-      border-right: 1px solid #e0e0e0;
-      padding: 10px; }
-      .sum-bottom-info .left-part .ear-sum .main .title i {
-        color: #666; }
-    .sum-bottom-info .left-part .ear-sum .main .amount {
-      flex-basis: 30%;
-      font-size: 17px;
-      font-weight: 700;
-      padding: 10px; }
-  .sum-bottom-info .right-part {
-    flex-basis: 50%;
-    margin-left: 10px; }
-    .sum-bottom-info .right-part .shopping-ads .header {
-      padding-top: 10px;
-      padding-bottom: 15px; }
-      .sum-bottom-info .right-part .shopping-ads .header .ads .title {
-        font-size: 14px;
-        font-weight: 700;
-        color: #c45500; }
-      .sum-bottom-info .right-part .shopping-ads .header .ads .tag {
-        font-size: 11px;
+      .sum-bottom-info-wrapper .sum-bottom-info .left-part .com-sum .main > * {
+        flex-basis: 100%;
+        flex-grow: 1;
+        flex-shrink: 1; }
+      .sum-bottom-info-wrapper .sum-bottom-info .left-part .com-sum .main .box {
+        border: 1px solid #e0e0e0;
+        border-right: none;
+        padding: 10px; }
+        .sum-bottom-info-wrapper .sum-bottom-info .left-part .com-sum .main .box:first-child {
+          border-left: none;
+          margin-left: -11px; }
+        .sum-bottom-info-wrapper .sum-bottom-info .left-part .com-sum .main .box:last-child {
+          border-right: none;
+          margin-right: -11px; }
+      .sum-bottom-info-wrapper .sum-bottom-info .left-part .com-sum .main .title {
+        padding-bottom: 30px;
+        font-size: 13px;
         font-weight: 600;
         color: #666; }
-      .sum-bottom-info .right-part .shopping-ads .header .detail {
-        text-align: right; }
-        .sum-bottom-info .right-part .shopping-ads .header .detail .title a {
-          text-decoration: none;
-          font-weight: 600; }
-          .sum-bottom-info .right-part .shopping-ads .header .detail .title a:hover {
-            color: #c45500; }
-        .sum-bottom-info .right-part .shopping-ads .header .detail .tag {
-          font-size: 13px;
+      .sum-bottom-info-wrapper .sum-bottom-info .left-part .com-sum .main .amount {
+        font-size: 13px;
+        font-weight: 600;
+        color: #444; }
+      .sum-bottom-info-wrapper .sum-bottom-info .left-part .com-sum .footer {
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 5px; }
+        .sum-bottom-info-wrapper .sum-bottom-info .left-part .com-sum .footer .total {
+          padding-left: 30px;
+          font-size: 18px;
+          font-weight: 700; }
+          .sum-bottom-info-wrapper .sum-bottom-info .left-part .com-sum .footer .total .tag {
+            font-size: 12px;
+            color: #777; }
+        .sum-bottom-info-wrapper .sum-bottom-info .left-part .com-sum .footer .amount {
+          float: right;
+          padding-right: 15px;
+          font-size: 17px;
+          font-weight: 700; }
+      .sum-bottom-info-wrapper .sum-bottom-info .left-part .boun-sum {
+        font-size: 14px;
+        font-weight: 700;
+        color: #c45500;
+        padding-top: 10px;
+        padding-bottom: 15px; }
+        .sum-bottom-info-wrapper .sum-bottom-info .left-part .boun-sum .header {
+          font-size: 14px;
+          font-weight: 700;
+          color: #c45500;
+          padding-top: 10px;
+          padding-bottom: 15px; }
+        .sum-bottom-info-wrapper .sum-bottom-info .left-part .boun-sum .main {
+          border-top: 1px solid #e0e0e0;
+          margin-left: -11px;
+          margin-right: -11px; }
+          .sum-bottom-info-wrapper .sum-bottom-info .left-part .boun-sum .main .box {
+            padding: 10px; }
+          .sum-bottom-info-wrapper .sum-bottom-info .left-part .boun-sum .main .title {
+            padding-bottom: 30px;
+            font-size: 13px;
+            font-weight: 600;
+            color: #888; }
+          .sum-bottom-info-wrapper .sum-bottom-info .left-part .boun-sum .main .amount {
+            font-size: 13px;
+            font-weight: 600;
+            color: #444; }
+          .sum-bottom-info-wrapper .sum-bottom-info .left-part .boun-sum .main .total-refs {
+            flex-basis: 70%;
+            border-right: 1px solid #e0e0e0; }
+          .sum-bottom-info-wrapper .sum-bottom-info .left-part .boun-sum .main .total-earnings {
+            flex-basis: 30%; }
+            .sum-bottom-info-wrapper .sum-bottom-info .left-part .boun-sum .main .total-earnings .title {
+              color: #444; }
+            .sum-bottom-info-wrapper .sum-bottom-info .left-part .boun-sum .main .total-earnings .amount {
+              color: #009900;
+              font-size: 1.2em; }
+      .sum-bottom-info-wrapper .sum-bottom-info .left-part .ear-sum .main .title {
+        font-size: 14px;
+        font-weight: 700;
+        color: #c45500;
+        flex-basis: 70%;
+        border-right: 1px solid #e0e0e0;
+        padding: 10px; }
+        .sum-bottom-info-wrapper .sum-bottom-info .left-part .ear-sum .main .title i {
+          color: #666; }
+      .sum-bottom-info-wrapper .sum-bottom-info .left-part .ear-sum .main .amount {
+        flex-basis: 30%;
+        font-size: 17px;
+        font-weight: 700;
+        padding: 10px; }
+    .sum-bottom-info-wrapper .sum-bottom-info .right-part {
+      flex-basis: 50%;
+      margin-left: 10px; }
+      .sum-bottom-info-wrapper .sum-bottom-info .right-part .shopping-ads .header {
+        padding-top: 10px;
+        padding-bottom: 15px; }
+        .sum-bottom-info-wrapper .sum-bottom-info .right-part .shopping-ads .header .ads .title {
+          font-size: 14px;
+          font-weight: 700;
+          color: #c45500; }
+        .sum-bottom-info-wrapper .sum-bottom-info .right-part .shopping-ads .header .ads .tag {
+          font-size: 11px;
           font-weight: 600;
           color: #666; }
-    .sum-bottom-info .right-part .shopping-ads .main > * {
-      flex-basis: 100%;
-      flex-grow: 1;
-      flex-shrink: 1; }
-    .sum-bottom-info .right-part .shopping-ads .main .box {
-      border: 1px solid #e0e0e0;
-      border-right: none;
-      padding: 10px; }
-      .sum-bottom-info .right-part .shopping-ads .main .box:first-child {
-        border-left: none;
-        margin-left: -11px; }
-      .sum-bottom-info .right-part .shopping-ads .main .box:last-child {
+        .sum-bottom-info-wrapper .sum-bottom-info .right-part .shopping-ads .header .detail {
+          text-align: right; }
+          .sum-bottom-info-wrapper .sum-bottom-info .right-part .shopping-ads .header .detail .title a {
+            text-decoration: none;
+            font-weight: 600; }
+            .sum-bottom-info-wrapper .sum-bottom-info .right-part .shopping-ads .header .detail .title a:hover {
+              color: #c45500; }
+          .sum-bottom-info-wrapper .sum-bottom-info .right-part .shopping-ads .header .detail .tag {
+            font-size: 13px;
+            font-weight: 600;
+            color: #666; }
+      .sum-bottom-info-wrapper .sum-bottom-info .right-part .shopping-ads .main > * {
+        flex-basis: 100%;
+        flex-grow: 1;
+        flex-shrink: 1; }
+      .sum-bottom-info-wrapper .sum-bottom-info .right-part .shopping-ads .main .box {
+        border: 1px solid #e0e0e0;
         border-right: none;
-        margin-right: -11px; }
-    .sum-bottom-info .right-part .shopping-ads .main .title {
-      padding-bottom: 30px;
-      font-size: 13px;
-      font-weight: 600;
-      color: #666; }
-    .sum-bottom-info .right-part .shopping-ads .main .amount {
-      font-size: 13px;
-      font-weight: 600;
-      color: #444; }
-    .sum-bottom-info .right-part .feauted .header {
-      font-size: 14px;
-      font-weight: 700;
-      color: #c45500;
-      padding-bottom: 10px; }
-    .sum-bottom-info .right-part .feauted .separator {
-      border-top: 1px solid #e0e0e0;
-      margin-left: -11px;
-      margin-right: -11px;
-      padding-bottom: 10px; }
-    .sum-bottom-info .right-part .feauted .main img {
-      border: 1px solid transparent;
-      width: 236px;
-      height: 196px;
-      transition: all 200ms ease;
-      -webkit-transition: all 200ms ease;
-      -moz-transition: all 200ms ease;
-      -ms-transition: all 200ms ease;
-      -o-transition: all 200ms ease; }
-      .sum-bottom-info .right-part .feauted .main img:hover {
-        border: 1px solid #fbd084;
-        box-shadow: 0px 1px 3px 3px rgba(0, 0, 0, 0.05); }
+        padding: 10px; }
+        .sum-bottom-info-wrapper .sum-bottom-info .right-part .shopping-ads .main .box:first-child {
+          border-left: none;
+          margin-left: -11px; }
+        .sum-bottom-info-wrapper .sum-bottom-info .right-part .shopping-ads .main .box:last-child {
+          border-right: none;
+          margin-right: -11px; }
+      .sum-bottom-info-wrapper .sum-bottom-info .right-part .shopping-ads .main .title {
+        padding-bottom: 30px;
+        font-size: 13px;
+        font-weight: 600;
+        color: #666; }
+      .sum-bottom-info-wrapper .sum-bottom-info .right-part .shopping-ads .main .amount {
+        font-size: 13px;
+        font-weight: 600;
+        color: #444; }
+      .sum-bottom-info-wrapper .sum-bottom-info .right-part .feauted .header {
+        font-size: 14px;
+        font-weight: 700;
+        color: #c45500;
+        padding-bottom: 10px; }
+      .sum-bottom-info-wrapper .sum-bottom-info .right-part .feauted .separator {
+        border-top: 1px solid #e0e0e0;
+        margin-left: -11px;
+        margin-right: -11px;
+        padding-bottom: 10px; }
+      .sum-bottom-info-wrapper .sum-bottom-info .right-part .feauted .main img {
+        border: 1px solid transparent;
+        width: 236px;
+        height: 196px;
+        transition: all 200ms ease;
+        -webkit-transition: all 200ms ease;
+        -moz-transition: all 200ms ease;
+        -ms-transition: all 200ms ease;
+        -o-transition: all 200ms ease; }
+        .sum-bottom-info-wrapper .sum-bottom-info .right-part .feauted .main img:hover {
+          border: 1px solid #fbd084;
+          box-shadow: 0px 1px 3px 3px rgba(0, 0, 0, 0.05); }

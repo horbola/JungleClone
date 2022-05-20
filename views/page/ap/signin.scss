@@ -18,8 +18,9 @@ body, html {
 header {
     margin-bottom: 18px!important;
     text-align: center; 
+    margin-top: 10px;
     img {
-        width: 100px;
+        width: 103px;
         height: 31px; 
     }
 }
@@ -132,7 +133,9 @@ header {
                 }
             }
                 
-            input {}
+            input {
+                -webkit-text-security: disc;
+            }
         }
         button {
             width: 100%!important;

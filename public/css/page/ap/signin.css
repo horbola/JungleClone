@@ -12,9 +12,10 @@ body, html {
 
 header {
   margin-bottom: 18px !important;
-  text-align: center; }
+  text-align: center;
+  margin-top: 10px; }
   header img {
-    width: 100px;
+    width: 103px;
     height: 31px; }
 
 .signin {
@@ -97,6 +98,8 @@ header {
           .signin__password .signin__row a:hover {
             color: #a88734;
             text-decoration: underline; }
+      .signin__password input {
+        -webkit-text-security: disc; }
     .signin__main-box button {
       width: 100% !important;
       height: 29px;

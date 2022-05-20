@@ -1,5 +1,7 @@
 .com-bottom-info {
-  margin-top: -15px; }
+  margin: 0 -10px -10px -10px;
+  border-top: 1px solid #DDD;
+  border-bottom: 1px solid #DDD; }
   .com-bottom-info .com-chart-bottom .box {
     padding: 10px; }
     .com-bottom-info .com-chart-bottom .box:not(:first-child) {

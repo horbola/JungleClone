@@ -16,18 +16,24 @@ Summary.prototype.earnSummSel = ".sum-bottom-info .left-part .ear-sum .amount";
 
 
 Summary.prototype.chngTxt = function(arg){
-    $(this.clickSel).text(arg.clickTxt);
-    $(this.ordrdItemSel).text(arg.ordrdTxt);
+//    window.alert(`orig ${arg.clickTxt} modified ${numberWithCommas(arg.clickTxt)}`);
     
-    $(this.shippedItemsSel).text(arg.shippedItemsTxt);
-    $(this.bonusSel).text('$'+arg.bonusTxt);
-    $(this.conversionSel).text(arg.conversionTxt+'%');
+    $(this.clickSel).text(numberWithCommas(arg.clickTxt));
+    $(this.ordrdItemSel).text(numberWithCommas(arg.ordrdTxt));
     
-    $(this.earningSel).text('$'+arg.earnTxt);
+    $(this.shippedItemsSel).text(numberWithCommas(arg.shippedItemsTxt));
+    $(this.bonusSel).text('$'+numberWithCommas(arg.bonusTxt));
+    $(this.conversionSel).text(numberWithCommas(arg.conversionTxt+'%'));
     
-    $(this.refSel).text(arg.refTxt);
-    $(this.refEarnSel).text('$'+arg.refEarnTxt);
-    $(this.earnSummSel).text('$'+arg.earnSummTxt);
+    $(this.earningSel).text('$'+numberWithCommas(arg.earnTxt));
+    
+    $(this.refSel).text(numberWithCommas(arg.refTxt));
+    $(this.refEarnSel).text('$'+numberWithCommas(arg.refEarnTxt));
+    $(this.earnSummSel).text('$'+numberWithCommas(arg.earnSummTxt));
 };
 
+
+function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
 

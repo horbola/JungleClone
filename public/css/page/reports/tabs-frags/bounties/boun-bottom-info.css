@@ -1,5 +1,6 @@
 .boun-bottom-info {
-  margin-top: -15px; }
+  margin: 0 -10px -10px -10px;
+  border-top: 1px solid #DDD; }
   .boun-bottom-info .boun-chart-bottom .box {
     padding: 10px; }
     .boun-bottom-info .boun-chart-bottom .box:not(:first-child) {

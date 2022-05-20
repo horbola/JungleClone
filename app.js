@@ -5,11 +5,12 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 //var favicon = require('serve-favicon');
 var logger = require('morgan');
+var robots = require('express-robots-txt');
 
 var indexRouter = require('./routes/index');
 var loggableRouter = require('./routes/loggable');
 var nonLoggableRouter = require('./routes/non-loggable');
-var devRouter = require('./dev/experim/routes/dev');
+var adminRouter = require('./routes/admin');
 
 
 
@@ -54,14 +55,13 @@ var prodRes = {
 };
 app.locals.jsRes = devRes;
 
-
+app.use(robots(__dirname + '/robots.txt'));
 app.set('view engine', 'jade');
 // view, static folders and view engine setup
 // separate decleration of view folders like static folders doesn't work
-app.set('views', [__dirname + '/views', __dirname + '/dev/experim/views']);
+app.set('views', __dirname + '/views');
 app.use(express.static(path.join(__dirname, 'views')));
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(express.static(path.join(__dirname, 'dev/experim/public')));
 
 
 app.use(logger('dev'));
@@ -73,7 +73,7 @@ app.use(cookieParser());
 app.use(app.locals.appName+'/', indexRouter);
 app.use(app.locals.appName+'/', loggableRouter);
 app.use(app.locals.appName+'/', nonLoggableRouter);
-app.use(app.locals.appName+'/dev', devRouter);
+app.use(app.locals.appName+'/', adminRouter);
 
 
 // catch 404 and forward to error handler

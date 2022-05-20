@@ -1,7 +1,7 @@
 
 // importing from the three charts
-
 import {Data} from "./../../lib/js/chart/data/data.js";
+
 
 import {SummaryChart} from './summary-tab.js';
 import {CommissionsChart} from './commissions-tab.js';
@@ -11,10 +11,6 @@ import {Tabs} from './tabs.js';
 import {Commissions} from './tabs-frags/commissions/commissions.js';
 import {Bounties} from './tabs-frags/bounties/bounties.js';
 import {Summary} from './tabs-frags/summary/summary.js';
-
-var appUrlGlobal = "https://affiliate-program-amz.com";
-var appUrlLocal = "http://localhost:3000/AmazAffClone";
-var appUrl = appUrlLocal;
 
 let chartLoader = '.chart-loader';
 let glasspane = '.glasspane';
@@ -274,6 +270,7 @@ $(trackApplyBtn).click(function(){
     $(trackIdPan).css('display', 'none');
     updateDataRange();
     updateChart();
+    console.log(`dataRange.selectedStall: ${dataRange.selectedStall}, dataRange.lastYear: ${dataRange.lastYear}`);
 });
 
 $(trackIdMod).hover(function(){
@@ -876,31 +873,9 @@ let boun = new Bounties({
 
 
 
-function showingSummTables(calculatedData) {
-    return new Promise(resolve => {
-        setTimeout(() => {
-            summ.chngTxt({
-                clickTxt: calculatedData.clicks,
-                ordrdTxt: calculatedData.orderedItems,
-                shippedItemsTxt: calculatedData.shipped,
-                bonusTxt: calculatedData.bonus,
-                conversionTxt: calculatedData.conversion,
-                earnTxt: calculatedData.sellEarnings,
-                refTxt: calculatedData.referrals,
-                refEarnTxt: calculatedData.referralEarnings,
-                earnSummTxt: calculatedData.bounties + calculatedData.sellEarnings
-            });
-            resolve('resolved');
-        }, 1000);
-    });
-}
-async function showingSummary(){
-    show(tabsAttrSel, sum_tab);
 
-    $(dynamic).remove();
-    $(sumCan).remove();
-    
-    $(sumTab).append('<canvas id="summary-canvas" width="1048" height="250"></canvas>');
+function showingSummary(){
+    show(tabsAttrSel, sum_tab);
     
     dataRange.lastYear = false;
     if(showingTableRange === 'last-year')
@@ -908,91 +883,57 @@ async function showingSummary(){
     
     summaryChart = new SummaryChart(sumCanStr, dataRange);
     
-    $(SecTabs).append('<div class="dynamic"></div>');
-    $(dynamic).load(appUrl + '/home/reports/sum-frags');
-    
-    let dataSet = commissionsChart.data.getDataSet();
+    let dataSet = summaryChart.data.getDataSet();
     let calculatedData = calcData(dataSet);
-    const result = await showingSummTables(calculatedData);
-    console.log(result);
+    showingSummTables(calculatedData);
 }
-
-
-
-
-
-function showingCommTables(calculatedData) {
-    return new Promise(resolve => {
-        setTimeout(() => {
-            summ.chngTxt({
-                clickTxt: calculatedData.clicks,
-                ordrdTxt: calculatedData.orderedItems,
-                shippedItemsTxt: calculatedData.shipped,
-                bonusTxt: calculatedData.bonus,
-                conversionTxt: calculatedData.conversion,
-                earnTxt: calculatedData.sellEarnings,
-                refTxt: calculatedData.referrals,
-                refEarnTxt: calculatedData.referralEarnings,
-                earnSummTxt: calculatedData.bounties + calculatedData.sellEarnings
-            });
-            comm.changeBottomInfo({
-                clicksAmount: calculatedData.clicks,
-                orderedItemsAmount: calculatedData.orderedItems,
-                shippedItemsAmount: calculatedData.shipped,
-                returnedItemsAmount: calculatedData.returned,
-                conversionAmount: calculatedData.conversion,
-                shipIteReveAmount: calculatedData.shippedRev,
-                bonusAmount: calculatedData.bonus,
-                totEarAmount: calculatedData.sellEarnings
-            });
-            comm.show7DayTables();
-            resolve('resolved');
-        }, 2000);
+function showingSummTables(calculatedData) {
+    summ.chngTxt({
+        clickTxt: calculatedData.clicks,
+        ordrdTxt: calculatedData.orderedItems,
+        shippedItemsTxt: calculatedData.shipped,
+        bonusTxt: calculatedData.bonus,
+        conversionTxt: calculatedData.conversion,
+        earnTxt: calculatedData.sellEarnings,
+        refTxt: calculatedData.referrals,
+        refEarnTxt: calculatedData.referralEarnings,
+        earnSummTxt: calculatedData.bounties + calculatedData.sellEarnings
     });
 }
-async function showingCommissions(){
+
+
+
+
+
+
+function showingCommissions(){
     show(tabsAttrSel, com_tab);
-    
-    $(dynamic).remove();
-    $(comCan).remove();
-    
-    $(comTab).append('<canvas id="commissions-canvas" width="1048" height="250"></canvas>');
     
     dataRange.lastYear = false;
     if(showingTableRange === 'last-year')
         dataRange.lastYear = true;
     
     commissionsChart = new CommissionsChart(comCanStr, dataRange);
-    
-    $(SecTabs).append('<div class="dynamic"></div>');
-    $(dynamic).load(appUrl + '/home/reports/com-frags', function(responseTxt, statusTxt, xhr){});
-    
     let dataSet = commissionsChart.data.getDataSet();
     let calculatedData = calcData(dataSet);
-    const result = await showingCommTables(calculatedData);
+    showingCommTables(calculatedData);
 }
-
-
-function showingBounTables(calculatedData) {
-    return new Promise(resolve => {
-        setTimeout(() => {
-            boun.updateTitleDate();
-            boun.changeBottomInfo({
-                totRefAmount: calculatedData.referrals,
-                totEarAmount: calculatedData.referralEarnings
-            });
-            boun.show7DayTable();
-            resolve('resolved');
-        }, 1000);
+function showingCommTables(calculatedData) {
+    comm.changeBottomInfo({
+        clicksAmount: calculatedData.clicks,
+        orderedItemsAmount: calculatedData.orderedItems,
+        shippedItemsAmount: calculatedData.shipped,
+        returnedItemsAmount: calculatedData.returned,
+        conversionAmount: calculatedData.conversion,
+        shipIteReveAmount: calculatedData.shippedRev,
+        bonusAmount: calculatedData.bonus,
+        totEarAmount: calculatedData.sellEarnings
     });
 }
-async function showingBounties(){
+
+
+function showingBounties(){
     show(tabsAttrSel, boun_tab);
-    
-    $(dynamic).remove();
-    $(bounCan).remove();
-    
-    $(bounTab).append('<canvas id="bounties-canvas" width="1048" height="250"></canvas>');
     
     dataRange.lastYear = false;
     if(showingTableRange === 'last-year')
@@ -1000,13 +941,16 @@ async function showingBounties(){
     
     bountiesChart = new BountiesChart(bounCanStr, dataRange);
     
-    $(SecTabs).append('<div class="dynamic"></div>');
-    $(dynamic).load(appUrl + '/home/reports/boun-frags');
-    
     let dataSet = bountiesChart.data.getDataSet();
     let calculatedData = calcData(dataSet);
-    const result = await showingBounTables(calculatedData);
-    console.log(result);
+    showingBounTables(calculatedData);
+}
+function showingBounTables(calculatedData) {
+    boun.updateTitleDate();
+    boun.changeBottomInfo({
+        totRefAmount: calculatedData.referrals,
+        totEarAmount: calculatedData.referralEarnings
+    });
 }
 
 

@@ -76,7 +76,10 @@ section.tabs {
                     .tracking-id-model {
                         padding-bottom: 10px;
                         &:hover {
-                            .tracking-id-panel {display: block;} 
+                            .tracking-id-panel {
+                                display: block;
+                                z-index: 100;
+                            } 
                         }
                     }
                     .range, .tracking-id {

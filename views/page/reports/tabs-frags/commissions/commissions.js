@@ -15,21 +15,21 @@ Commissions.prototype.totEarSel = '.total-earnings .amount';
 Commissions.prototype.args = {};
 
 
-Commissions.prototype.commTablesSel = '.com-bottom-table table';
-Commissions.prototype.commTableOrdItemSel = '.com-bottom-table .table-ordered-items';
-Commissions.prototype.commTableEarningSel = '.com-bottom-table .table-earnings';
-Commissions.prototype.commTableLinkPerformSel = '.com-bottom-table .table-link-perform';
+Commissions.prototype.commTablesSel = '.com-bottom-grid table';
+Commissions.prototype.commTableOrdItemSel = '.com-bottom-grid .grid-ordered-items';
+Commissions.prototype.commTableEarningSel = '.com-bottom-grid .grid-earnings';
+Commissions.prototype.commTableLinkPerformSel = '.com-bottom-grid .grid-link-perform';
 
-Commissions.prototype.sevDayTableSel = '.seven-day-table';
-Commissions.prototype.thirDayTableSel = '.thirty-day-table';
-Commissions.prototype.thisWeekTableSel = '.this-week-table';
-Commissions.prototype.lastWeekTableSel = '.last-week-table';
-Commissions.prototype.thisMonthTableSel = '.this-month-table';
-Commissions.prototype.lastMonthTableSel = '.last-month-table';
-Commissions.prototype.thisQuarterTableSel = '.this-quarter-table';
-Commissions.prototype.lastQuarterTableSel = '.last-quarter-table';
-Commissions.prototype.thisYearTableSel = '.this-year-table';
-Commissions.prototype.lastYearTableSel = '.last-year-table';
+Commissions.prototype.sevDayTableSel = '.seven-day-grid';
+Commissions.prototype.thirDayTableSel = '.thirty-day-grid';
+Commissions.prototype.thisWeekTableSel = '.this-week-grid';
+Commissions.prototype.lastWeekTableSel = '.last-week-grid';
+Commissions.prototype.thisMonthTableSel = '.this-month-grid';
+Commissions.prototype.lastMonthTableSel = '.last-month-grid';
+Commissions.prototype.thisQuarterTableSel = '.this-quarter-grid';
+Commissions.prototype.lastQuarterTableSel = '.last-quarter-grid';
+Commissions.prototype.thisYearTableSel = '.this-year-grid';
+Commissions.prototype.lastYearTableSel = '.last-year-grid';
 
 
 Commissions.prototype.changeBottomInfo = function (args) {
@@ -69,7 +69,7 @@ Commissions.prototype.changeTotEar = function (amount) {
     this.changeTxt(this.totEarSel, '$'+amount+'.00');
 };
 Commissions.prototype.changeTxt = function (childSel, amount) {
-    $(this.bottomInfoParentSel).find(childSel).text(amount);
+    $(this.bottomInfoParentSel).find(childSel).text(numberWithCommas(amount));
 };
 
 
@@ -123,3 +123,6 @@ Commissions.prototype.changeTables = function (dayTableSel) {
 
 
 
+function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}

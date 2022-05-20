@@ -29,6 +29,15 @@ module.exports = {
         filename: '[name].js'
     }
     
+//    resolve: {
+//        modules: [path.resolve(__dirname, './views'), 'node_modules'],
+//        extensions: ['.js', '.jsx', '.json']
+//        alias: {
+//            reducers: path.resolve(__dirname, './src/reducers')
+//        }
+//    }
+    
+    
 //    watch: true,
 //    watchOptions: {
 //        ignored: [

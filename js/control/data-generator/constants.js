@@ -4,26 +4,49 @@
 function Constants(){}
 
 // stall's names
-Constants.ALL = 'all';
-Constants.GUIDEL_20 = 'guidel-20';
-Constants.CUTEST_HOME_20 = 'cutesthome-20';
-Constants.COMPARISON_TALK_20 = 'comparisontalk-20';
-Constants.AUTONERDY_20 = 'autonerdy-20';
-Constants.SCIENCE_SELECTOR_20 = 'scienceselector-20';
-Constants.BESTOP_20 = 'bestob-20';
-Constants.HOUSE_TACTICAL_20 = 'housetactical-20';
-Constants.HOME_GUIDE_ZONE = 'homeguidezone-20';
-Constants.PRO_REVIEW_BUZZ_NEW_20 = 'proreviewbuzznew-20';
-Constants.S_CYCLING_NEW_20 = '5cyclingnew-20';
-Constants.BRZ04_20 = 'brz04-20';
-Constants.STAPLE_SEARCH_NEW_20 = 'staplesearchnew-20';
-Constants.AUTONERDS_REVIEW_20 = 'autonerdsreview-20';
-Constants.PRH03_20 = 'prh03-20';
-Constants.REVIEWER_TOUCH_20 = 'reviewertouch-20';
-Constants.MYSV_20 = 'mysv-20';
+Constants.STALL_00 = 'stall-00';
+Constants.STALL_01 = 'stall-01';
+Constants.STALL_02 = 'stall-02';
+Constants.STALL_03 = 'stall-03';
+Constants.STALL_04 = 'stall-04';
+Constants.STALL_05 = 'stall-05';
+Constants.STALL_06 = 'stall-06';
+Constants.STALL_07 = 'stall-07';
+Constants.STALL_08 = 'stall-08';
+Constants.STALL_09 = 'stall-09';
+Constants.STALL_10 = 'stall-10';
+Constants.STALL_11 = 'stall-11';
+Constants.STALL_12 = 'stall-12';
+Constants.STALL_13 = 'stall-13';
+Constants.STALL_14 = 'stall-14';
+Constants.STALL_15 = 'stall-15';
+Constants.STALL_16 = 'stall-16';
 
+Constants.CURRENT_YEAR = 'current-year';
 Constants.LAST_YEAR = 'last-year';
 
+
+
+// all stall names so that we can iterate on it.
+Constants.stallNames = [
+    Constants.STALL_00,
+    Constants.STALL_01,
+    Constants.STALL_02,
+    Constants.STALL_03,
+    Constants.STALL_04,
+    Constants.STALL_05,
+    Constants.STALL_06,
+    Constants.STALL_07,
+    Constants.STALL_08,
+    Constants.STALL_09,
+    Constants.STALL_10,
+    Constants.STALL_11,
+    Constants.STALL_12,
+    Constants.STALL_13,
+    Constants.STALL_14,
+    Constants.STALL_15,
+    Constants.STALL_16
+];
 
 
 
@@ -40,6 +63,41 @@ Constants.SEP = 'sep';
 Constants.OCT = 'oct';
 Constants.NOV = 'nov';
 Constants.DEC = 'dec';
+
+
+
+// all month names so that we can iterate on it.
+Constants.monthNames = [
+    Constants.JAN,
+    Constants.FEB,
+    Constants.MAR,
+    Constants.APR,
+    Constants.MAY,
+    Constants.JUN,
+    Constants.JUL,
+    Constants.AUG,
+    Constants.SEP,
+    Constants.OCT,
+    Constants.NOV,
+    Constants.DEC
+];
+
+
+// all month names so that we can iterate on it.
+Constants.configFileNames = [
+    Constants.JAN + Constants.CONFIG_FILE_EXT,
+    Constants.FEB + Constants.CONFIG_FILE_EXT,
+    Constants.MAR + Constants.CONFIG_FILE_EXT,
+    Constants.APR + Constants.CONFIG_FILE_EXT,
+    Constants.MAY + Constants.CONFIG_FILE_EXT,
+    Constants.JUN + Constants.CONFIG_FILE_EXT,
+    Constants.JUL + Constants.CONFIG_FILE_EXT,
+    Constants.AUG + Constants.CONFIG_FILE_EXT,
+    Constants.SEP + Constants.CONFIG_FILE_EXT,
+    Constants.OCT + Constants.CONFIG_FILE_EXT,
+    Constants.NOV + Constants.CONFIG_FILE_EXT,
+    Constants.DEC + Constants.CONFIG_FILE_EXT
+];
 
 
 // type's name
