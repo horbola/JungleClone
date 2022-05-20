@@ -1,0 +1,77 @@
+@import "../../../lib/scss/_lib.scss";
+
+section.options {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 60px; 
+    margin-left: 35px;
+    margin-right: 35px;
+    .f-item {
+        max-width: 250px; 
+        text-align: center;
+        .icon-big {}
+        .icon-small {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            .outer {
+                border: 1px solid;
+                border-radius: 50%;
+                background-color: black;
+                width: 20px;
+                display: inline-block;
+                .inner {
+                    color: #fff;
+                    font-weight: 700;
+                }
+            }
+        }
+        .tag {
+            font-size: 21px;
+            color: #111;
+            line-height: 21px;
+            display: block;
+            clear: left;
+            margin-bottom: 20px;
+        }
+        .descrip {
+            font-family: AmazonEmber_Lt, "Amazon Ember", Arial, sans-serif;
+            color: #555;
+            line-height: 19px;
+            display: block;
+            font-size: 16px;
+        }
+    }
+    .signup {
+        margin-left: -30px;
+        .icon-big {}
+        .icon-small {
+            .outer {
+                .inner {}
+            }
+        }
+        .tag {}
+        .descrip {}
+    }
+    .recommend {
+        .icon-big {}
+        .icon-small {
+            .outer {
+                .inner {}
+            }
+        }
+        .tag {}
+        .descrip {}
+    }
+    .earn {
+        margin-left: 20px;
+        .icon-big {}
+        .icon-small {
+            .outer {
+                .inner {}
+            }
+        }
+        .tag {}
+        .descrip {}
+    }
+}
+    

@@ -1,0 +1,121 @@
+.clearfix:before,.clearfix:after{
+    content:"";
+    display:table;
+    }
+  .clearfix:after{
+   clear:both;
+   }
+.divtop{
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    
+    border-bottom: 3px solid #E31F64;
+    
+    
+}
+.box1{
+    background-color: #FAFAF2;
+    height: 333px;
+    border: 1px solid rgb(172, 170, 170);
+    
+    
+    
+}
+.box1c1{
+    padding: 15px;
+    margin-top: 60px;
+    width: 490px;
+}
+.box1c1 > p{
+    font-size: large;
+}
+.box1c2{
+    width: 564px;
+}
+
+.box2r1{
+    height: 30px;
+    background-color: white;
+    margin-top: 15px;
+}
+.box2c1{
+    border: 1px solid rgb(206, 204, 204);
+    padding: 5px;
+    
+}
+.box2c1 > a{
+    margin-left: 60px;
+}
+.box3{
+    height: 412px;
+    background-color: white;
+}
+.box3r1{
+    padding-top: 33px;
+    padding-left: 209px;
+    padding-right: 209px;
+    font-size: large;
+    height: 152px;
+}
+.box3r1 > p{
+    margin: 0 auto;
+}
+.box3r2{
+    height: 120px;
+    background-color: white;
+}
+.box3c1{
+    margin-left: 50px;
+}
+
+.box4{
+    height: 100px;
+    background-color: white;
+    margin-top: 15px;
+    border-top: 1px solid rgb(214, 210, 210);
+    border-left: 1px solid rgb(214, 210, 210);
+    border-right: 1px solid rgb(214, 210, 210);
+}
+.box4 > h5{
+    margin-top: 20px;
+    margin-left: 20px;
+
+}
+.ptext{
+    margin-left: 20px;
+}
+.box4txt{
+    height: 65px;
+    background-color: white;
+    border-left: 1px solid rgb(214, 210, 210);
+    border-right: 1px solid rgb(214, 210, 210);
+
+}
+.box4img{
+    background-color: white;
+    border-bottom: 1px solid rgb(214, 210, 210);
+    border-left: 1px solid rgb(214, 210, 210);
+    border-right: 1px solid rgb(214, 210, 210);
+}
+.box5{
+    margin-top: 15px;
+    height: 40px;
+    background-color: white;
+    padding: 15px;
+    border-top: 1px solid rgb(214, 210, 210);
+    border-left: 1px solid rgb(214, 210, 210);
+    border-right: 1px solid rgb(214, 210, 210);
+}
+.box51{
+    background-color: white;
+    border-left: 1px solid rgb(214, 210, 210);
+    border-right: 1px solid rgb(214, 210, 210);
+}
+.box52{
+    height: 100px;
+    background-color: white;
+    border-left: 1px solid rgb(214, 210, 210);
+    border-right: 1px solid rgb(214, 210, 210);
+    border-bottom: 1px solid rgb(214, 210, 210);
+    margin-bottom: 20px;
+}

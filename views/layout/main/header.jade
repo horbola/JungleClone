@@ -1,0 +1,186 @@
+// Header section starts
+header
+    #top-nav
+        .row.justify-content-end.pr-0.pl-0
+            .sate-col.col-auto.d-inline-flex.align-items-center
+                .state-dropdown.position-relative
+                    span.drop-btn
+                        img(src="/img/home/US-flag.gif" alt="")
+                        span United States
+                        i.fa.fa-chevron-down(aria-hidden="true")
+                    .state-dropdown-menu.dropdown-menu-custom.arrow.page-card-padded
+                        ul
+                            li #[a.selected-main(href="#") #[span.circle-out #[span.circle-fill]] United Statesn]
+                            .separator
+                            li #[a(href="#") #[span.circle-out #[span.circle-fill]] United States]
+                            li #[a(href="#") #[span.circle-out #[span.circle-fill]] United Kingdom]
+                            li #[a(href="#") #[span.circle-out #[span.circle-fill]] Germany]
+                            li #[a(href="#") #[span.circle-out #[span.circle-fill]] France]
+                            li #[a(href="#") #[span.circle-out #[span.circle-fill]] Japan]
+                            li #[a(href="#") #[span.circle-out #[span.circle-fill]] Canada]
+                            li #[a(href="#") #[span.circle-out #[span.circle-fill]] China]
+                            li #[a(href="#") #[span.circle-out #[span.circle-fill]] Italy]
+                            li #[a(href="#") #[span.circle-out #[span.circle-fill]] Spain]
+                            li #[a(href="#") #[span.circle-out #[span.circle-fill]] India]
+                            li #[a(href="#") #[span.circle-out #[span.circle-fill]] Brazil]
+                            li #[a(href="#") #[span.circle-out #[span.circle-fill]] Mexico]
+                            li #[a(href="#") #[span.circle-out #[span.circle-fill]] Australia]
+                            li #[a(href="#") #[span.circle-out #[span.circle-fill]] United Arab Emirates]
+                            li #[a(href="#") #[span.circle-out #[span.circle-fill]] Singapore]
+                            li #[a(href="#") #[span.circle-out #[span.circle-fill]] Netherlands]
+                            li #[a(href="#") #[span.circle-out #[span.circle-fill]] Saudi Arabia]
+                            li #[a(href="#") #[span.circle-out #[span.circle-fill]] Sweden]
+            
+            .lang-col.col-auto.d-inline-flex.align-items-center
+                .lang-dropdown.position-relative
+                    span.lang-drop-btn
+                        span Engl1ish - EN
+                        i.fa.fa-chevron-down(aria-hidden="true")
+                    .lang-dropdown-menu.dropdown-menu-custom.arrow.page-card-padded
+                        ul
+                            li #[a.selected-main(href="#") #[span.circle-out #[span.circle-fill]] English - EN]
+                            .separator
+                            li #[a(href="#") #[span.circle-out #[span.circle-fill]] Español - ES]
+                        a.learn-more(href="#") Learn more #[i.fa.fa-chevron-right]
+                    
+            .store-col.col-auto.d-inline-flex.align-items-center.pr-0
+                .store Store: #[span mysh05-20]
+
+    #logo-nav
+        .row.justify-content-end.pr-0.pl-0
+            .logo-col.col-auto.d-inline-flex.align-items-center.mr-auto
+                a.logo(href="#") #[img(src="/img/home/AmazLogo.svg" alt="")]
+                
+            .bell-col.col-auto.d-inline-flex.align-items-center
+                .bell-dropdown.position-relative
+                    span.bell-drop-btn #[i.fa.fa-bell]
+                    .bell-dropdown-menu.dropdown-menu-custom.arrow.page-card-padded
+                        ul
+                            li
+                                a(href="#" target="_blank")
+                                    .left
+                                        .title New Role Base Access Control has launched
+                                        .tag Click here to learn more
+                                    .right
+                                        span.close-mark &times;
+                                            span.ttip close
+                            .separator
+                            li 
+                                a(href="#" target="_blank")
+                                    .left
+                                        .title Native shopping ads now monetize your traffic from United Kingdom
+                                        .tag Click here to get started
+                                    .right
+                                        span.close-mark &times;
+                                            span.ttip close
+                            .separator
+                            li 
+                                a(href="#" target="_blank")
+                                    .left
+                                        .title Introducing new Native Shopping Ads Reports
+                                        .tag Now, get a more in-depth view of your earnings and improve your performance. Get started!
+                                    .right
+                                        span.close-mark &times;
+                                            span.ttip close
+                            .separator
+                            li 
+                                a(href="#" target="_blank")
+                                    .left
+                                        .title Native Shopping Ads Performance Guide.
+                                        .tag Learn how to discover and understand your performance.
+                                    .right
+                                        span.close-mark &times;
+                                            span.ttip close
+                                    
+                
+            .id-col.col-auto.d-inline-flex.align-items-center.pr-0
+                .id-dropdown.position-relative
+                    span.id-drop-btn iqbalhossain9069@gmail.com #[i.fa.fa-chevron-down(aria-hidden="true")]
+                    .id-dropdown-menu.dropdown-menu-custom.arrow.page-card-padded
+                        ul
+                            li #[a(href="#") Account Setting]
+                            li #[a(href="#") Payment History]
+                            li #[a(href="#") Manage Your Tracking IDs]
+                            li #[a(href="#{appUrl}/ap/signout") Sign Out]
+
+
+    #main-nav
+        nav
+            a(href="#{appUrl}/home")
+                button.drop-down.home
+                    span.drop-btn
+                        span Home
+                    .main-dropdown-menu.dropdown-menu-custom
+                        ul
+            .drop-down
+                span.drop-btn
+                    span Product Linking
+                    i.fa.fa-caret-down(aria-hidden="true")
+                .main-dropdown-menu.dropdown-menu-custom
+                    ul
+                        li #[a(href="#{appUrl}/home/productlinks/search") Product Links]
+                        .separator
+                        li #[a(href="#{appUrl}/home/bannerlinks") Banners]
+                        .separator
+                        li #[a(href="#{appUrl}/home/ads") Native Shopping Ads]
+                        .separator
+                        li #[a(href="#{appUrl}/home/tools/mobilepopover") Mobile Popover]
+                        .separator
+                        li #[a(href="#{appUrl}/home/textlink/general") Link to Any Page]
+                        .separator
+                        li
+                            a(href="#")
+                                div this is an element
+            .drop-down
+                span.drop-btn
+                    span Promotions
+                    i.fa.fa-caret-down(aria-hidden="true")
+                .main-dropdown-menu.dropdown-menu-custom
+                    ul
+                        li #[a(href="#{appUrl}/p/ideahub/home") Idea Hub]
+                        .separator
+                        li #[a(href="#{appUrl}/home/bounties") Amazon Bounty Program]
+                        .separator
+                        li #[a(href="#{appUrl}/home/promohub/promocodes") Amazon Promo Codes]
+            .drop-down
+                span.drop-btn
+                    span Tools
+                    i.fa.fa-caret-down(aria-hidden="true")
+                .main-dropdown-menu.dropdown-menu-custom
+                    ul
+                        li #[a(href="#{appUrl}/home/textlink/sitestripe") SiteStripe]
+                        .separator
+                        li #[a(href="#{appUrl}/home/tools/linkchecker") Link Checker]
+                        .separator
+                        li #[a(href="#{appUrl}/assoc_credentials/home") Product Advertising API]
+                        .separator
+                        li #[a(href="#{appUrl}/onelink") OneLink]
+                        .separator
+                        li #[a(href="#{appUrl}/onelink/tag/map") Link Your Accounts]
+            .drop-down
+                span.drop-btn
+                    span Reports
+                    i.fa.fa-caret-down(aria-hidden="true")
+                .main-dropdown-menu.dropdown-menu-custom
+                    ul
+                        li #[a(href="#{appUrl}/home/reports/global") Earning Report]
+            .drop-down
+                span.drop-btn
+                    span Help
+                    i.fa.fa-caret-down(aria-hidden="true")
+                .main-dropdown-menu.dropdown-menu-custom
+                    ul
+                        li #[a(href="#{appUrl}/help/node") Product Help]
+                        .separator
+                        li #[a(href="#{appUrl}/resource-center") Resource Center]
+                        .separator
+                        li #[a(href="#{appUrl}/help/operating/agreement") Operating Agreement]
+                        .separator
+                        li #[a(href="#{appUrl}/help/node/topic/GRXPHT8U84RAYDXZ") Commissions Income Statement]
+                        .separator
+                        li #[a(href="#{appUrl}/help/operating/policies") Program Policies]
+                        .separator
+                        li #[a(href="#{appUrl}/help/forum") Discussion Boards]
+                        .separator
+                        li #[a(href="#{appUrl}/contact") Contact Us]
+// Header section ends

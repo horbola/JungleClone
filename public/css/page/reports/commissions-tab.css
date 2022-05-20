@@ -1,0 +1,33 @@
+.commissions-tab {
+  position: relative; }
+  .commissions-tab #chart-popup {
+    pointer-events: none;
+    position: absolute;
+    top: 50px;
+    left: 200px;
+    border: 1px solid;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 0px;
+    padding: 10px;
+    background-color: #444c55;
+    font-size: 14px;
+    color: #fafafa;
+    z-index: 2;
+    overflow: hidden;
+    display: none; }
+    .commissions-tab #chart-popup .title {
+      font-weight: 700; }
+    .commissions-tab #chart-popup ul li .disc {
+      display: inline-block;
+      position: relative;
+      top: -0.05em;
+      width: 7px;
+      height: 7px;
+      border: 1px solid transparent;
+      border-radius: 50%; }
+    .commissions-tab #chart-popup ul li:nth-child(1) .disc {
+      background-color: #58e2c2; }
+    .commissions-tab #chart-popup ul li:nth-child(2) .disc {
+      background-color: #d05254; }
+    .commissions-tab #chart-popup ul li:nth-child(3) .disc {
+      background-color: yellow; }

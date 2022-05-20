@@ -1,0 +1,5 @@
+
+function SVG(){}
+
+
+export {SVG};

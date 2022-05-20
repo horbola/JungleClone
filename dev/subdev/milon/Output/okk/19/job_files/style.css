@@ -1,0 +1,57 @@
+.mainbody{
+    min-height: 500px;
+    background-color: white;
+    padding-top: 21px;
+    padding-left: 18px;
+    padding-right: 20px;
+}
+.mainbody > h1{
+    color: rgb(214, 101, 9);
+    font-size: 26px;
+
+}
+
+.mainbody > a{    
+    font-size: 14px;    
+}
+.mainbody > a:hover{
+    color: rgb(248, 147, 80);    
+}
+
+.bordera > a{
+    border-bottom: 1px solid gray;
+    font-size: 14px;    
+}
+.bordera > a:hover{
+    color: rgb(189, 75, 0);
+}
+.mainbody > p{
+    font-size: 1.08rem;
+    line-height: 20px;
+}
+.mainbody > p > a:hover{
+    color: rgb(189, 75, 0);
+}
+.mainbody > h3{
+    color: rgb(190, 88, 3);
+    font-size: 18px;
+    text-align: center;
+}
+.tbdiv{
+    width: 700px;
+}
+.table{
+    font-size: 12px;
+    text-align: left;
+    
+    border: 1px solid #111;
+}
+tr th{
+    
+    background-color: #232F3E;
+    color: white;
+    height: 10px;  
+}
+.tb1div{
+    width: 351px;
+}

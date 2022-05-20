@@ -1,0 +1,10 @@
+@import "../../lib/scss/_lib.scss";
+
+.container-fluid {
+    max-width: 1100px;
+    margin-top: $container-margin-top;
+    margin-bottom: $container-margin-bottom;
+    padding-right: 0;
+    padding-left: 0;
+}
+

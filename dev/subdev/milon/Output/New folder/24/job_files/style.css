@@ -1,0 +1,80 @@
+/* body style is here */
+
+.clearfix:before,.clearfix:after{
+    content:"";
+    display:table;
+    }
+  .clearfix:after{
+   clear:both;
+   }
+  .boxbody{
+    width: 100%;
+    min-width: 800px;
+  }
+  .topbox{
+    background-color: white;
+    border: 1px solid rgb(224, 222, 222);
+    height: 52px;
+    padding: 10px;
+  }
+  
+  
+  .leftbox{
+    width: 250px;
+    height: 140px;
+    background-color: white;
+    margin-top: 20px;
+    border: 1px solid rgb(206, 203, 203);
+    float: left;
+  
+    
+  }
+  .leftboxtop{
+    padding: 8px;
+    height: 40px;
+    border-bottom: 1px solid rgb(207, 206, 206);
+  }
+  .leftboxbotton{
+    padding: 10px;
+    
+  }
+  .leftboxbotton b{
+    color:#C66229;
+    font-size: small;
+  }
+  
+  /* rightbox style*/
+  .rightbox{
+    
+    width: 797px;
+    min-height: 500px;
+    background-color: white;
+    float: right;
+    margin-top: 20px;
+    border: 1px solid rgb(206, 203, 203);
+    padding: 20px;
+  }
+  .rightbox > h4{
+    color: #C66229;
+  }
+  
+  
+  
+  #para{
+    font-size: small;
+  }
+  #endfoot{
+    width: 400px;
+    height: 120px;
+    padding: 20px;
+    border: 1px solid rgb(209, 206, 206);
+    border-radius: 5px;
+  }
+  #endfoot > h4{
+    color: #9d9b9e;
+  }
+  .btcg{
+    background-color: #E5E8ED;
+    border: 1px solid gray;
+    
+  }

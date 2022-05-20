@@ -1,0 +1,5 @@
+
+function Konva(){}
+
+
+export {Konva};

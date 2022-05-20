@@ -1,0 +1,123 @@
+@import "../../../lib/scss/_lib.scss";
+
+section.carousel-products {
+    overflow-x: hidden;
+    position: relative;
+    >.title {
+        padding-bottom: 20px;
+        .recommend {
+            color: #C45500;
+            font-weight: 700;
+        }
+        .new {
+            color: #0066c0;
+        }
+    }
+        
+    .imgs {
+        width: 10000px;
+        clear: both;
+        position: relative;
+        -webkit-transition: left 2s;
+        -moz-transition: left 2s;
+        -o-transition: left 2s;
+        transition: left 0.25s linear;
+        
+        padding-left: 5px;
+        padding-right: 5px;
+        .slide {
+            float: left;
+            
+            margin-left: 10px;
+            margin-right: 15px;
+            position: relative;
+            img {
+                border: 1px solid #e3e3e3;
+            }
+            .info {
+                padding-top: 5px;
+                padding-bottom: 10px;
+                .title {
+                    color: #0066c0;
+                    font-weight: 600;
+                }
+                .provider {
+                    color: #999;
+                    font-weight: 600;
+                }
+                .price {
+                    color: #C45500;
+                    font-weight: 600;
+                }
+            }
+            .get-link {
+                position: absolute;
+                top: 150px;
+                left: -10px;
+                transform: translateX(50%);
+                background: #e7e9ec;
+                border-radius: 3px;
+                border-color: #ADB1B8 #A2A6AC #8D9096;
+                border-style: solid;
+                border-width: 1px;
+                cursor: pointer;
+                display: inline-block;
+                padding: 4px 20px;
+                visibility: hidden;
+                /*transition: all 200ms ease;*/
+            }
+            &:hover .get-link {
+                visibility: visible;
+
+            }
+        }
+    }
+    
+    .controls {
+        .left-control, .right-control {
+            position: absolute;
+            top: 50%;
+            width: 33px;
+            height: 53px;
+            line-height: 55px;
+            box-shadow: 0px 1px 3px 3px rgba(0,0,0,0.05);
+            border: 1px solid #fff;
+            text-align: center;
+            cursor: pointer;
+            transition: all 200ms ease;
+            -webkit-transition: all 200ms ease;
+            -moz-transition: all 200ms ease;
+            -ms-transition: all 200ms ease;
+            -o-transition: all 200ms ease;
+            background-color: rgba(255,255,255,0.5);
+            color: #bbb;
+            transform: translateY(-50%);
+            visibility: hidden;
+        }
+        .left-control {
+            left: 60px;
+        }
+        .right-control {
+            right: 60px;
+        }
+    }
+    &:hover .left-control {
+        left: 0;
+        visibility: visible;
+    }
+    &:hover .right-control {
+        right: 0;
+        visibility: visible;
+    }
+}
+            
+
+
+
+
+
+
+
+
+
+

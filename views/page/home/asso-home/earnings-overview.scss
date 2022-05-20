@@ -1,0 +1,229 @@
+@import "../../../lib/scss/_lib.scss";
+
+.earnings-overview {
+    .canvas-side {
+        position: absolute;
+        height: 200px;
+        .top {
+            color: #db6c18;
+            font-weight: 600;
+            line-height: normal;
+            white-space: nowrap; 
+            position: absolute;
+            top: 10px;
+            left: 15px;
+            z-index: 1;
+            font-size: 18px;
+            span {
+                color: #999;
+                font-size: 15px; 
+                font-weight: 400;
+            }
+        }
+    }
+    .canvas-main {
+        position: relative;
+        margin-right: auto;
+        margin-left: auto;
+        .canvas-area {
+            overflow: hidden;
+            flex: 0 0 66%;
+            padding-left: 0;
+            padding-right: 0;
+            .popup {
+                position: absolute;
+                top: 50px;
+                left: 200px;
+                border: 1px solid;
+                border-radius: 5px;
+                box-shadow: 1px 1px 5px 0px;
+                padding: 10px;
+                background-color: #444c55;
+                font-size: 14px;
+                color: #fafafa;
+                z-index: 2;
+                overflow: hidden;
+                display: none;
+                pointer-events: none;
+                .title {
+                    font-weight: 700;
+                }
+                ul{
+                    li{
+                        .disc{
+                            display: inline-block;
+                            position: relative;
+                            top: -0.05em;
+                            width: 7px;
+                            height: 7px; 
+                            border: 1px solid transparent;
+                            border-radius: 50%;
+                        }
+                        .type{
+                            
+                        }
+                        .value{
+                            
+                        }
+                    }
+                    li:nth-child(1) .disc {background-color: #58e2c2;}
+                    li:nth-child(2) .disc {background-color: #71a8e6;}
+                    li:nth-child(3) .disc {background-color: yellow;}
+                }
+            }
+            
+
+            #canvas {
+                    padding-left: 15px;
+                    padding-left: 15px;
+                }
+            .separator {
+                border: 1px solid #DDD;
+            }
+            .canvas-bottom {
+                height: 100%;
+                padding-left: 15px;
+                padding-right: 15px;
+                text-align: left;
+                > div {
+                    padding-top: 15px;
+                }
+                > div:not(:first-child) {
+                    border-left: 1px solid #ddd;
+                }
+                .title {
+                    font-size: 1em;
+                    color: #333;
+                    font-weight: 600;
+                }
+                .amount {
+                    font-size: 1.1em;
+                    color: #333;
+                    font-weight: bold;
+                }
+                .total-fees {
+                    flex-basis: 33%;
+                    margin-left: -20px;
+                    > div {
+                        padding: 15px;
+                        padding-top: 0;
+                        padding-left: 0;
+                    }
+                    .title {
+                        
+                    }
+                    .amount {
+                        
+                    }
+                }
+                
+                .total-bounties {
+                    flex-basis: 33%;
+                    > div {
+                        padding: 15px;
+                        padding-top: 0;
+                    }
+                    .title {
+                        
+                    }
+                    .amount {
+                        
+                    }
+                }
+                .total-clicks {
+                    flex-basis: 33%;
+                    > div {
+                        padding: 15px;
+                        padding-top: 0;
+                    }
+                    .title {
+
+                    }
+                    .amount {
+                        
+                    }
+                }
+                
+            }
+        }
+        .aside {
+            padding-right: 0;
+            margin-left: 7px;
+            .month-summary-title {
+                h6 {
+                    border: 1px solid #DDD;
+                    background-color: #fff;
+                    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.05), 0px 0px 0px 0px rgba(0,0,0,0);
+                    border-top-right-radius: 2px;
+                    border-top-left-radius: 2px;
+                    margin-bottom: 0;
+                    padding: 15px;
+                    color: #c45500;
+                    font-weight: 700;
+                }
+            }
+            .month-summary {
+                border-top-right-radius: 0;
+                border-top-left-radius: 0;
+                .rows {
+                    line-height: 1.5em;
+                    .rowc {
+                        display: flex;
+                        margin: 0 15px;
+                        padding: 5px 0;
+                        border-bottom: 1px solid #f3f3f3;
+                        font-weight: 600;
+                        .tag {
+                            flex-basis: 62%;
+                        }
+                        .price {
+                            
+                        }
+                    }
+                }
+                .footer-msg {
+                    padding: 10px 15px 50px;
+                    text-align: right;
+                    font-size: 12px;
+                    color: #666;
+                    .last-updated {
+                        
+                    }
+                    .combined-report {
+                        
+                    }
+                }
+                .full-report {
+                    padding: 0 0 15px 15px;
+                    a {
+                        font-weight: 600;
+                        &:hover {
+                            color: #C55601;
+                        }
+                    }
+                }
+            }
+            .did-u-know {
+                h6 {
+                    color: #c45500;
+                    font-weight: 700;
+                }
+                max-width: auto;
+                padding: 15px;
+                img {
+                    width: 100%;
+                    height: 70px;
+                }
+                a {
+                    font-weight: 600;
+                    &:hover {
+                        color: #C55601;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+

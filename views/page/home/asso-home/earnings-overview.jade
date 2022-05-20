@@ -1,0 +1,51 @@
+section.earnings-overview
+    .canvas-side
+        .top Earnings Overview #[span (for Last 30 days)]
+    .row.canvas-main
+        .col.canvas-area.page-card
+            #chart-popup.popup
+                .title july 29 2020
+                ul
+                    li #[span.disc] #[span.type Commissions: ] #[span.value $0]
+                    li #[span.disc] #[span.type Bounties: ] #[span.value $0]
+                    li #[span.disc] #[span.type Clicks: ] #[span.value $0]
+            canvas#canvas(width="670" height="415")
+            .separator
+            .canvas-bottom.pl-5.pr-5.d-flex.justify-content-between
+                .total-fees
+                    .title Total Fees
+                    .amount $1,771.02
+                .total-bounties
+                    .title Total Bounties
+                    .amount $21226
+                .total-clicks
+                    .title Total clicks
+                    .amount $15000
+        .col.aside
+            .month-summary-title
+                h6 Summary for This Month
+            .page-card.month-summary
+                .rows
+                    .rowc
+                        .tag Total Items Shipped
+                        .price 419
+                    .rowc
+                        .tag Total Earnings
+                        .price $682.82
+                    .rowc
+                        .tag Total Ordered Items
+                        .price 442
+                    .rowc
+                        .tag Clicks
+                        .price 8,133
+                    .rowc
+                        .tag Conversion
+                        .price 5.43%
+                .footer-msg
+                    .last-updated Last updated: Jul 12 2020
+                    .combined-report Combined report for all tracking IDs.
+                .full-report #[a(href="#{appUrl}/home/reports") View Full Report]
+            .page-card.did-u-know
+                h6 Did You Know?
+                img(src="/img/home/did-u-know.png" alt="")
+                a(href="#") Get Started Now

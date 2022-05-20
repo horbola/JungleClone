@@ -1,0 +1,48 @@
+doctype html
+html
+    head
+        if title
+            title= title
+        else
+            title Amazon.com Associates
+        link(rel='stylesheet', href= jsRes.FAcss)
+        link(rel='stylesheet', href='/css/page/ap/signin.css')
+        <link rel="shortcut icon" type="image/ico" href="/img/favicon/browser-tab-icon.png"/>
+    body
+        header
+            img(src="/img/home/logo.jpg" alt="")
+        .signin
+            if errMsg
+                .err-msg
+                    .err-msg_icon
+                        <i class="fas fa-exclamation-triangle"></i>
+                    .err-msg_detail
+                        .err-msg_title There was a problem
+                        .err-msg_descrip Your email or password is incorrect
+            form(action="#{appUrl}/login")
+                .signin__main-box
+                    h4 Sign-In
+                    .signin__email
+                        label(for="email") Email (phone for mobile accounts)
+                        input(type="text" name="email" value="")
+                    .signin__password
+                        .signin__row
+                            label(for="password") Password
+                            a(href="#") Forgot your password?
+                        input(type="password" name="password" value="")
+                        if origUrl
+                            input(type="hidden" name="origUrl" value= origUrl)
+                    button(type="submit") Sign-In
+                    p.aggrement By continuing, you agree to Amazon's #[a(href="") Conditions of] Use and #[a(href="") Privacy Notice]
+                    .signin__keeping-signin
+                        label(for="keeping-signin") #[input(type="checkbox" name="keeping-signin" value="")] #[span.raised Keep me signed in. #[a(href='#') Details]] 
+                    .signin__new-to-amazon #[h5 New to Amazon?]
+                    button.signin__create-amazon-account(type="button") #[a(href="#{appUrl}/ap/registration") Create your Amazon account]
+        footer
+            .shadow
+            .signin__top-row
+                span #[a(href="#") Conditions fo Use]
+                span #[a(href="#") Privacy Notice]
+                span #[a(href="#") Help]
+            .copyright © 1996-2020, Amazon.com, Inc. or its affiliates
+        

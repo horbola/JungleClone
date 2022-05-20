@@ -1,0 +1,19 @@
+.boun-bottom-info {
+  margin-top: -15px; }
+  .boun-bottom-info .boun-chart-bottom .box {
+    padding: 10px; }
+    .boun-bottom-info .boun-chart-bottom .box:not(:first-child) {
+      border-left: 1px solid #ddd; }
+    .boun-bottom-info .boun-chart-bottom .box:not(:last-child) {
+      min-width: 245px; }
+    .boun-bottom-info .boun-chart-bottom .box .title {
+      font-weight: 700;
+      padding-bottom: 20px;
+      color: #333; }
+    .boun-bottom-info .boun-chart-bottom .box .amount {
+      font-weight: 700; }
+  .boun-bottom-info .boun-chart-bottom .total-earnings .title {
+    font-weight: 700; }
+  .boun-bottom-info .boun-chart-bottom .total-earnings .note i {
+    font-weight: 700;
+    color: #777; }

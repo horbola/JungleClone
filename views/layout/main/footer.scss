@@ -1,0 +1,64 @@
+@import "../../lib/scss/_lib.scss";
+
+footer {
+    .footer-up {
+        height: 75px;
+        background-color: #e8e8e8;
+        text-align: center;
+        border: 1px solid #f3f3f3;
+        font-family: "Amazon Ember", Arial, sans-serif;
+        font-size: .95em;
+        .comment {
+            font-family: "Amazon Ember", Arial, sans-serif;
+            font-size: .95em; 
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        .sugession {
+            font-family: "Amazon Ember", Arial, sans-serif;
+            font-size: .95em;
+            font-weight: 500;
+            a {
+                &:hover {
+                    color: #c45500;
+                }
+            }
+        }
+    }
+    
+    overflow: hidden;
+    background-color: white;
+    
+    .row {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 1070px;
+        padding: 20px 0px 50px 0px;
+        
+        .col:last-child{
+            flex-grow: 1.5;
+            margin-left: auto;
+        }
+    }
+    ul:nth-last-of-type(1) {
+        
+    }
+    ul {
+        font-weight: 600;
+        li {
+            font-size: 13px;
+            line-height: 17px;
+            margin-bottom: 5px;
+            a {
+                &:hover {
+                    color: #c45500;
+                }
+            }
+        }
+        li h6 {
+            font-size: 14px;
+            margin-bottom: 0px;
+            font-weight: 700;
+        }
+    }
+}

@@ -1,0 +1,41 @@
+footer {
+  overflow: hidden;
+  background-color: white; }
+  footer .footer-up {
+    height: 75px;
+    background-color: #e8e8e8;
+    text-align: center;
+    border: 1px solid #f3f3f3;
+    font-family: "Amazon Ember", Arial, sans-serif;
+    font-size: .95em; }
+    footer .footer-up .comment {
+      font-family: "Amazon Ember", Arial, sans-serif;
+      font-size: .95em;
+      font-weight: 700;
+      margin-bottom: 10px; }
+    footer .footer-up .sugession {
+      font-family: "Amazon Ember", Arial, sans-serif;
+      font-size: .95em;
+      font-weight: 500; }
+      footer .footer-up .sugession a:hover {
+        color: #c45500; }
+  footer .row {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1070px;
+    padding: 20px 0px 50px 0px; }
+    footer .row .col:last-child {
+      flex-grow: 1.5;
+      margin-left: auto; }
+  footer ul {
+    font-weight: 600; }
+    footer ul li {
+      font-size: 13px;
+      line-height: 17px;
+      margin-bottom: 5px; }
+      footer ul li a:hover {
+        color: #c45500; }
+    footer ul li h6 {
+      font-size: 14px;
+      margin-bottom: 0px;
+      font-weight: 700; }

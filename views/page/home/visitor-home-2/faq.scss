@@ -1,0 +1,79 @@
+@import "../../../lib/scss/_lib.scss";
+
+section.faq {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-left: 35px;
+    margin-right: 35px;
+    h2.setion-title {
+        
+    }
+    
+    .secs {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .sec {
+            max-width: 450px;
+            .title {
+                font-size: 21px;
+                color: #000;
+                text-align: left;
+                margin-top: 40px;
+                margin-bottom: 20px;
+                line-height: 1.2;
+            }
+            .descrip {
+                margin-top: 5px;
+                font-family: AmazonEmber_Lt, "Amazon Ember", Arial, sans-serif;
+                color: #555;
+                font-weight: 200;
+                line-height: 21px;
+                text-align: left;
+                a {
+                    color: #0066c0;
+                    &:hover {
+                        color: #C55601;
+                    }
+                }
+            }
+            .first {
+                margin-bottom: 25px;
+            }
+        }
+        
+        
+        .sec1 {
+            h5.title {}
+            p.descrip {
+                a {}
+            }
+        }
+        .sec2 {
+            h5.title {}
+            p.descrip {
+                a {}
+            }
+        }
+        .sec3 {
+            h5.title {}
+            p.descrip {
+                a {}
+            }
+            p.descrip {
+                a {}
+            }
+        }
+        .sec4 {
+            h5.title {}
+            p.descrip {
+                a {}
+            }
+            p.descrip {
+                a {}
+            }
+        }
+    }
+}
+    
+    

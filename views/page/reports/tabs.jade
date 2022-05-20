@@ -1,0 +1,46 @@
+section.tabs
+    .tabs-wrapper.page-card-padded
+        .sec-header
+            .title.d-flex.justify-content-between
+                .topic Summary
+                .link-tab
+                    <a class="card-border" href="http://localhost:3000/AmazAffClone/home" target="_blank">Commissions Schedule</a>
+                    <a class="card-border" href="http://localhost:3000/AmazAffClone/home" target="_blank">Payment History</a>
+                    <a class="card-border" href="http://localhost:3000/AmazAffClone/home" target="_blank">Download Reports</a>
+                    <a class="card-border" href="http://localhost:3000/AmazAffClone/home" target="_blank">Feedback</a>
+                    <a class="card-border" href="http://localhost:3000/AmazAffClone/home" target="_blank">Help</a>
+            .days.d-flex.justify-content-between
+                .index
+                    .result-span-model
+                        include result-span-panel
+                        .hover-box
+                            span.date Sep 03 2020 / 
+                            span.range Last 7 Days
+                            span.chevron #[i.fa.fa-chevron-down]
+                    .tracking-id-model
+                        include tracking-id-panel
+                        .hover-box
+                            span.tracker Tracking ID: 
+                            span.tracking-id All
+                            span.chevron #[i.fa.fa-chevron-down]
+                .update
+                    span Last Updated: 
+                    span.time Sep 03 2020 +00:00
+        .sec-tab.card-border-y
+            .summary.tab.position-relative.card-border-r
+                span.hide-border
+                span.title Summary
+                span.amount #[sup $]532#[sup .12]
+            .commissions.tab.position-relative.card-border-r
+                span.hide-border
+                span.title Commissions
+                span.amount #[sup $]532#[sup .12]
+            .bounties.tab.position-relative.card-border-r
+                span.hide-border
+                span.title Bounties
+                span.amount #[sup $]532#[sup .12]
+        .sec-content
+            include summary-tab
+            include commissions-tab
+            include bounties-tab
+    .dynamic.card-border-tbless

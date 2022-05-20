@@ -1,0 +1,131 @@
+.mainbody{
+    min-height: 500px;
+}
+.ac-card {
+    
+    padding: 10px;
+    margin-bottom: 15px;
+    padding-left: 15px;
+    border-radius: 2px;
+    height: 42px;
+}
+.ac-card > a:hover{
+    color: rgb(240, 151, 42);
+}
+
+.ac-card1{
+    border: 1px solid #DDD;
+    background-color: #fff;
+    margin-bottom: 15px;
+    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.05);
+    border-radius: 2px;
+    min-height: 280px;
+    
+}
+
+.ac-card-title{
+    color: #000000;
+    font-size: 1.4em;
+    padding: 31px 5px 0px 31px;
+    position: relative;
+}
+.ac-card-texte{
+    padding: 13px 5px 5px 10px;
+}
+.ac-card-texte > p{
+    font-size: 14px;
+    line-height: 18px;
+    margin-left: 20px;
+}
+.card-header{
+    background-color: white;
+    border-bottom: 1px solid rgb(196, 195, 195);
+    margin-top: 9px;
+}
+.card{
+    background-color: white;
+    border: none;
+    margin-left: 32px;
+    margin-right: 45px;
+    
+}
+.card-header1{
+    margin-top: 27px;
+    background-color: rgba(236, 234, 234, 0.774);
+    height: 52px;
+    padding: 10px;
+}
+.btn{
+    border: none;
+    margin-left: 0px;
+}
+.bjbjb{
+    font-size: 14px;
+}
+.bjbjb > a:hover{
+    color: rgb(235, 165, 85);
+}
+
+.liLTFH:disabled {
+    cursor: not-allowed;
+    outline: none;
+    opacity: 1;
+    color: rgb(102, 102, 102);
+    background: rgb(254, 241, 212);
+    border-color: rgb(240, 229, 201) rgb(244, 229, 187) rgb(228, 219, 194);
+    pointer-events: all;
+}
+
+.liLTFH {
+    line-height: 1.465;
+    font-weight: normal;
+    font-family: "Amazon Ember", Helvetica, sans-serif;
+    white-space: nowrap;
+    border-radius: 3px;
+    color: rgb(17, 17, 17);
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    border-width: 1px;
+    border-style: solid;
+    padding: 5px 10px;
+    background: linear-gradient(rgb(249, 207, 111), rgb(246, 189, 66) 80%, rgb(246, 189, 65));
+    border-color: rgb(240, 194, 70) rgb(235, 188, 60) rgb(191, 154, 59);
+    font-size: 13px;
+    margin-bottom: 30px;
+}
+.row{
+    margin: 0 auto;
+}
+.col1{
+    border: 1px solid rgb(230, 227, 227);
+    width: 527px;
+    background-color: white;
+    margin-right: 16px;
+    height: 97px;
+    padding-left: 20px;
+    padding-top: 15px;
+}
+.col1 > p{
+    font-size: 13px; 
+}
+.col1 > a:hover{
+    color: rgb(221, 130, 25);
+}
+.col2{
+    border: 1px solid rgb(230, 227, 227);
+    width: 527px;
+    background-color: white;
+    height: 97px;
+    padding-left: 20px;
+    padding-top: 15px;  
+}
+.col2 > p{
+    font-size: 13px; 
+}
+.col2 > a:hover{
+    color: rgb(221, 130, 25);
+}
+.card-body{
+    margin-left: 0px;
+}

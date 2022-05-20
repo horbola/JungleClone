@@ -1,0 +1,70 @@
+section.product-link-search.page-card
+    nav
+        #nav-tab.nav.nav-tabs.nav-fill(role="tablist")
+            a#product-link-search-content-tab.nav-item.nav-link.active(data-toggle="tab" href="#search-product" role="tab" aria-controls="nav-home" aria-selected="true") Quick Links: Search for Products
+            a#nav-profile-tab.nav-item.nav-link(data-toggle="tab" href="#browse-product" role="tab" aria-controls="nav-profile" aria-selected="false") Search for Products
+    #nav-tabContent.tab-content
+        #search-product.tab-pane.fade.show.active(role="tabpanel" aria-labelledby="nav-home-tab")
+            form
+                .form-group
+                    .rowc.d-flex.justify-content-between
+                        label(for="input-email") Search and create links for any product. You can also create short links.
+                        a(href="3") Advanced Search
+                    .row
+                        .col
+                            .form-search-icon #[i.fa.fa-search]
+                            input#input-email.form-control(type="text" aria-describedby="emailHelp" placeholder="keyword or ASIN/ISBN")
+                        .col-auto
+                            button.btn(type="submit") Go
+        #browse-product.tab-pane.fade(role="tabpanel" aria-labelledby="nav-profile-tab")
+            p Select an Amazon category below to display recent best-selling products from that category. Or build a link to this category.
+            .flex
+                .browsing-category
+                    ul
+                        li #[a(href="#") Arts, Crafts & Sewing]
+                        li #[a(href="#") Automotive]
+                        li #[a(href="#") Baby & Nursery]
+                        li #[a(href="#") Beauty & Grooming]
+                        li #[a(href="#") Blu-Ray & DVD]
+                        li #[a(href="#") Books & Textbooks]
+                        li #[a(href="#") Business & industrial Supplies]
+                        li #[a(href="#") CDs & Vinyl]
+                        li #[a(href="#") Camera & Photo]
+                        li #[a(href="#") Cell Phones & Accessories]
+                        li #[a(href="#") Classical Music]
+                        li #[a(href="#") Clothing & Accessories]
+                        li #[a(href="#") Collectible Coins]
+                        li #[a(href="#") Computers, Tablets & Components]
+                        li #[a(href="#") Digital Music]
+                        li #[a(href="#") Electronic Components & Home Audio]
+                        li #[a(href="#") Entertainment Collectibles]
+                        li #[a(href="#") Grocery & Gourmet Food]
+                        li #[a(href="#") Health & Household]
+                        li #[a(href="#") Home Improvement]
+                        li #[a(href="#") Jewelry]
+                        li #[a(href="#") Kindle Store]
+                        li #[a(href="#") Kitchen & Dining]
+                        li #[a(href="#") Magazines]
+                        li #[a(href="#") Major Appliances]
+                        li #[a(href="#") Miscellaneous]
+                        li #[a(href="#") Musical Instruments]
+                        li #[a(href="#") Office & School Supplies]
+                        li #[a(href="#") Other Gift Card Brands]
+                        li #[a(href="#") Patio, Lawn & Garden]
+                        li #[a(href="#") Pet Food & Supplies]
+                        li #[a(href="#") Patio, Lawn & Garden]
+                        li #[a(href="#") Shoes, Handbags, Wallets, Sunglasses]
+                        li #[a(href="#") Software]
+                        li #[a(href="#") Sports & Fitness]
+                        li #[a(href="#") Sports Collectibles]
+                        li #[a(href="#") Toys & Games]
+                        li #[a(href="#") VHS]
+                        li #[a(href="#") Video Games]
+                        li #[a(href="#") Video Games]
+                        li #[a(href="#") Video On Demand: Rent or Buy]
+                        li #[a(href="#") Watches]
+                        
+                .get-link 
+                    span.left.box Get link
+                    .right.box
+                        i.fa.fa-chevron-down

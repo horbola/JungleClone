@@ -1,0 +1,38 @@
+@import "../../../../lib/scss/_lib.scss";
+
+ .boun-bottom-info {
+     margin-top: -15px;
+    .boun-chart-bottom {
+        .box {
+            padding: 10px;
+            &:not(:first-child) {
+                border-left: 1px solid #ddd;
+            }
+            &:not(:last-child) {
+                min-width: 245px;
+            }
+            .title {
+                font-weight: 700;
+                padding-bottom: 20px;
+                color: #333;
+            }
+            .amount {
+                font-weight: 700;
+            }
+        }
+        .total-earnings {
+            .title {
+                font-weight: 700;
+            }
+            .note {
+                i {
+                    font-weight: 700;
+                    color: #777;
+                }
+            }
+            .amount {}
+        }
+    }
+}
+
+

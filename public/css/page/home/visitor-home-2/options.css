@@ -1,0 +1,38 @@
+section.options {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 60px;
+  margin-left: 35px;
+  margin-right: 35px; }
+  section.options .f-item {
+    max-width: 250px;
+    text-align: center; }
+    section.options .f-item .icon-small {
+      margin-top: 20px;
+      margin-bottom: 10px; }
+      section.options .f-item .icon-small .outer {
+        border: 1px solid;
+        border-radius: 50%;
+        background-color: black;
+        width: 20px;
+        display: inline-block; }
+        section.options .f-item .icon-small .outer .inner {
+          color: #fff;
+          font-weight: 700; }
+    section.options .f-item .tag {
+      font-size: 21px;
+      color: #111;
+      line-height: 21px;
+      display: block;
+      clear: left;
+      margin-bottom: 20px; }
+    section.options .f-item .descrip {
+      font-family: AmazonEmber_Lt, "Amazon Ember", Arial, sans-serif;
+      color: #555;
+      line-height: 19px;
+      display: block;
+      font-size: 16px; }
+  section.options .signup {
+    margin-left: -30px; }
+  section.options .earn {
+    margin-left: 20px; }

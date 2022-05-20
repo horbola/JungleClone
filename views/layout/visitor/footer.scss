@@ -1,0 +1,25 @@
+@import "../../lib/scss/_lib.scss";
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid;
+    padding: 15px 15px 30px 15px;
+    overflow: hidden;
+}
+
+footer ul:nth-last-of-type(1) {
+    margin-left:150px;
+}
+
+
+footer ul li {
+    font-size: 13px;
+    line-height: 17px;
+    margin-bottom: 5px;
+}
+
+footer ul li h6 {
+    font-size: 14px;
+    margin-bottom: 0px;
+}

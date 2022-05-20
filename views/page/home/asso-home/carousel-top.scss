@@ -1,0 +1,65 @@
+@import "../../../lib/scss/_lib.scss";
+
+#caro {
+    max-width: 1070px;
+    max-height: 260px;
+    background-color: white;
+    position: relative;
+    .slider {
+        max-width: 100%;
+        max-height: inherit;
+        text-align: center;
+        overflow: hidden;
+        .image-container {
+            width: 10000px;
+            height: inherit;
+            clear: both;
+            position: relative;
+            -webkit-transition: left 0.2s linear;
+            -moz-transition: left 0.2s linear;
+            -o-transition: left 0.2s linear;
+            transition: left 0.2s linear;
+            cursor: pointer;
+            img {
+                float: left;
+            }
+        }
+        .buttons {
+            position: relative;
+            top: -20px;
+            .btn {
+                display: inline-block;
+                height: 15px;
+                width: 15px;
+                border-radius: 50px;
+                background-color: lightgreen;
+            }
+        }
+    }
+    .angle-left {
+        width: 20px;
+        height: 20px;
+        border: 1px solid;
+        border-top: none;
+        border-right: none;
+        position: absolute;
+        top: 50%;
+        left: 0; 
+        transform: rotate(45deg) translate(0, -50%);
+        margin-left: 15px;
+        cursor: pointer;
+    }
+    .angle-right {
+        width: 20px;
+        height: 20px;
+        border: 1px solid;
+        border-top: none;
+        border-right: none;
+        position: absolute;
+        bottom: 50%;
+        right: 0; 
+        transform: rotate(-135deg) translate(0, -50%);
+        margin-right: 15px;
+        cursor: pointer;
+    }
+}

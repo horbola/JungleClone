@@ -1,0 +1,27 @@
+.glasspane {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 11;
+  display: none; }
+
+.chart-loader {
+  width: 200px;
+  height: 45px;
+  border-radius: 5px;
+  background: #fff;
+  line-height: 45px;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #e3e3e3;
+  background: #fff;
+  z-index: 12;
+  display: none; }
+  .chart-loader img {
+    padding: 0 20px; }

@@ -1,0 +1,192 @@
+
+.com-bottom-table
+    .table-names
+        .wrapper
+            .name.ordered-items.position-relative.arrow-after.hover-bg-clr Ordered Items
+            .name.earnings.position-relative Earnings
+            .name.link-perform.position-relative Link Type Performance
+    .table-ordered-items.full-table.showing-table
+        .main-part.page-card-padded
+            .header
+                .group-by
+                    span.new 
+                        <img src="/img/reports/air-plane.png" alt=""/>
+                        span  New: 
+                    span.tag Group By: 
+                    span.tracking-id
+                        span.tag Tracking ID
+                        span #[i.fa.fa-chevron-down]
+                        span.dd-box
+                            span.dd-selected Tracking ID
+                            span Date
+                            span None
+            .tbl
+                .bottom-glasspane
+                .table-loader
+                    <img src="/img/reports/chart-loader.gif" alt=""/>
+                include tables/ordered-items/seven-day-table
+                include tables/ordered-items/thirty-day-table
+                include tables/ordered-items/this-week-table
+                include tables/ordered-items/last-week-table
+                include tables/ordered-items/this-month-table
+                include tables/ordered-items/last-month-table
+                include tables/ordered-items/this-quarter-table
+                include tables/ordered-items/last-quarter-table
+                include tables/ordered-items/this-year-table
+                include tables/ordered-items/last-year-table
+            .footer.d-flex.justify-content-between
+                .range-controls
+                    span.showing (Showing #[span.range 1 - 5] Items)
+                    span.results-per-page
+                        span.btn 
+                            span.amount 25
+                            i.fa.fa-chevron-down
+                            span.dd-box
+                                span.dd-selected 25
+                                span 50
+                                span 75
+                                span 100
+                        span results per page
+
+                .btn-controls
+                    span.prev
+                        span ←
+                        span.tag Prev
+                    span.next
+                        span.tag Next
+                        span →
+                    
+        .notes.page-card-padded
+            .header Notes
+            .tables
+                table
+                    tr
+                        td 1
+                        td Kindle E-Books Earnings
+                        td You have referred #[a(href="#") #[span.count-first 0] Kindle Free E-books and #[span.count-second 0] Kindle Paid E-Books.] Per our operating agreement, certain conditions may cause non payment of advertising fees. #[a(href="#") Learn More.]
+                    tr
+                        td 2
+                        td Transactions ineligible for Fees
+                        td Per our operating agreement, certain conditions and exclusions exist that may cause a purchase through a link to not earn advertising fees. #[a(href="#") Learn More.]
+
+                    
+
+    .table-earnings.full-table
+        .main-part.page-card-padded
+            .header
+                .group-by
+                    span.new 
+                        <img src="/img/reports/air-plane.png" alt=""/>
+                        span  New: 
+                    span.tag Group By: 
+                    span.tracking-id
+                        span.tag Tracking ID
+                        span #[i.fa.fa-chevron-down]
+            .tbl
+                .bottom-glasspane
+                .table-loader
+                    <img src="/img/reports/chart-loader.gif" alt=""/>
+                include tables/earnings/seven-day-table
+                include tables/earnings/thirty-day-table
+                include tables/earnings/this-week-table
+                include tables/earnings/last-week-table
+                include tables/earnings/this-month-table
+                include tables/earnings/last-month-table
+                include tables/earnings/this-quarter-table
+                include tables/earnings/last-quarter-table
+                include tables/earnings/this-year-table
+                include tables/earnings/last-year-table
+            .footer.d-flex.justify-content-between
+                .range-controls
+                    span.showing (Showing #[span.range 1 - 5] Items)
+                    span.results-per-page
+                        span.btn 
+                            span.amount 25
+                            i.fa.fa-chevron-down
+                            span.dd-box
+                                span.dd-selected 25
+                                span 50
+                                span 75
+                                span 100
+                        span results per page
+
+                .btn-controls
+                    span.prev
+                        span ←
+                        span.tag Prev
+                    span.next
+                        span.tag Next
+                        span →
+                    
+        .notes.page-card-padded
+            .header Notes
+            .tables
+                table
+                    tr
+                        td 1
+                        td alexa speaking
+                        td You have referred #[a(href="#") #[span.count-first 0] Kindle Free E-books and #[span.count-second 0] Kindle Paid E-Books.] Per our operating agreement, certain conditions may cause non payment of advertising fees. #[a(href="#") Learn More.]
+                    tr
+                        td 2
+                        td Transactions ineligible for Fees
+                        td Per our operating agreement, certain conditions and exclusions exist that may cause a purchase through a link to not earn advertising fees. #[a(href="#") Learn More.]
+
+    .table-link-perform.full-table
+        .main-part.page-card-padded
+            .header
+                .group-by
+                    span.new 
+                        <img src="/img/reports/air-plane.png" alt=""/>
+                        span  New: 
+                    span.tag Group By: 
+                    span.tracking-id
+                        span.tag Tracking ID
+                        span #[i.fa.fa-chevron-down]
+            .tbl
+                .bottom-glasspane
+                .table-loader
+                    <img src="/img/reports/chart-loader.gif" alt=""/>
+                include tables/link-type-perform/seven-day-table
+                include tables/link-type-perform/thirty-day-table
+                include tables/link-type-perform/this-week-table
+                include tables/link-type-perform/last-week-table
+                include tables/link-type-perform/this-month-table
+                include tables/link-type-perform/last-month-table
+                include tables/link-type-perform/this-quarter-table
+                include tables/link-type-perform/last-quarter-table
+                include tables/link-type-perform/this-year-table
+                include tables/link-type-perform/last-year-table
+            .footer.d-flex.justify-content-between
+                .range-controls
+                    span.showing (Showing #[span.range 1 - 5] Items)
+                    span.results-per-page
+                        span.btn 
+                            span.amount 25
+                            i.fa.fa-chevron-down
+                            span.dd-box
+                                span.dd-selected 25
+                                span 50
+                                span 75
+                                span 100
+                        span results per page
+
+                .btn-controls
+                    span.prev
+                        span ←
+                        span.tag Prev
+                    span.next
+                        span.tag Next
+                        span →
+                    
+        .notes.page-card-padded
+            .header Notes
+            .tables
+                table
+                    tr
+                        td 1
+                        td cortana is denying
+                        td You have referred #[a(href="#") #[span.count-first 0] Kindle Free E-books and #[span.count-second 0] Kindle Paid E-Books.] Per our operating agreement, certain conditions may cause non payment of advertising fees. #[a(href="#") Learn More.]
+                    tr
+                        td 2
+                        td Transactions ineligible for Fees
+                        td Per our operating agreement, certain conditions and exclusions exist that may cause a purchase through a link to not earn advertising fees. #[a(href="#") Learn More.]

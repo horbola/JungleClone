@@ -1,0 +1,31 @@
+section.faq {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  margin-left: 35px;
+  margin-right: 35px; }
+  section.faq .secs {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    section.faq .secs .sec {
+      max-width: 450px; }
+      section.faq .secs .sec .title {
+        font-size: 21px;
+        color: #000;
+        text-align: left;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        line-height: 1.2; }
+      section.faq .secs .sec .descrip {
+        margin-top: 5px;
+        font-family: AmazonEmber_Lt, "Amazon Ember", Arial, sans-serif;
+        color: #555;
+        font-weight: 200;
+        line-height: 21px;
+        text-align: left; }
+        section.faq .secs .sec .descrip a {
+          color: #0066c0; }
+          section.faq .secs .sec .descrip a:hover {
+            color: #C55601; }
+      section.faq .secs .sec .first {
+        margin-bottom: 25px; }

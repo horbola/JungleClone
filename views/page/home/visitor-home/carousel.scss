@@ -1,0 +1,132 @@
+@import "../../../lib/scss/_lib.scss";
+
+#caro {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin-bottom: 10px;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    padding: 0 10px;
+}
+
+#caro .caro-container {
+    position: relative;
+    overflow: hidden;
+    height: 430px;
+}
+
+#caro .slide {
+    display: none;
+
+}
+
+#caro .slide img {
+    width: 100%;
+    height: 430px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#caro .slide .caption {
+    position: absolute;
+    z-index: 1;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    z-index: 2;
+    font-size: 19px;
+    font-weight: 600;
+    letter-spacing: .01em;
+
+}
+
+
+#caro .label {
+    position: absolute;
+    z-index: 1;
+    border: 1px solid;
+    left: 0;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(0,0,0,0.7);
+}
+
+#caro .dropdown-box {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+}
+#caro .dropdown-box .circle-wrapper {
+    position: absolute;
+    z-index: 1;
+    bottom: 0px;
+    right: 0px;
+    height: 50px;
+    width: 40px;
+    font-size: 18px;
+}
+#caro .dropdown-box .circle-wrapper .fa-chevron-circle-up {
+    color: white;
+}
+
+#caro .dropdown-box .circle-wrapper .fa {
+    display: none;
+    position: relative;
+    top: 15px;
+    left: 10px;
+    
+}
+#caro .dropdown-box .circle-wrapper .active {
+    display: block;
+}
+
+
+#caro .dropdown-box .dropdown-list {
+    position: absolute;
+    z-index: 1;
+    bottom: 0px;
+    right: 0;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    width: 300px;
+    visibility: hidden;
+    
+}
+
+#caro .dropdown-box:hover .dropdown-list {
+    visibility: visible;
+}
+#caro .dropdown-box:hover .circle-wrapper .fa-chevron-circle-up {
+    display: none;
+}
+#caro .dropdown-box:hover .circle-wrapper .fa-chevron-circle-down {
+    display: block;
+    color: white;
+}
+
+#caro .dropdown-box .dropdown-list ul {
+    background-color: rgba(0,0,0,0.8);
+    border: 1px solid black;
+    border-bottom: none;
+}
+#caro .dropdown-box .dropdown-list > div {
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+}
+
+#caro .dropdown-box .dropdown-list li {
+    padding: 5px;
+    padding-left: 8px;
+}
+
+#caro .dropdown-box .dropdown-list li:hover {
+    background-color: white;
+    color: black;
+}

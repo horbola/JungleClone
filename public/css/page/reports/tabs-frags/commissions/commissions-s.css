@@ -1,0 +1,272 @@
+.com-bottom-info {
+  margin-top: -15px; }
+  .com-bottom-info .com-chart-bottom .box {
+    padding: 10px; }
+    .com-bottom-info .com-chart-bottom .box:not(:first-child) {
+      border-left: 1px solid #ddd; }
+    .com-bottom-info .com-chart-bottom .box .title {
+      font-weight: 600;
+      padding-bottom: 30px;
+      color: #333; }
+    .com-bottom-info .com-chart-bottom .box .amount {
+      font-weight: 700; }
+    .com-bottom-info .com-chart-bottom .box:last-child {
+      position: relative; }
+      .com-bottom-info .com-chart-bottom .box:last-child .note {
+        position: absolute;
+        top: 30px;
+        left: 10px;
+        color: #555;
+        font-weight: 600;
+        font-size: 12px; }
+  .com-bottom-info .com-chart-bottom .bonus .title span {
+    position: relative;
+    top: -2px;
+    color: #c45500;
+    font-size: 11px;
+    font-weight: 700; }
+  .com-bottom-info .com-chart-bottom .total-earnings .title {
+    font-weight: 700; }
+  .com-bottom-info .com-chart-bottom .total-earnings .note i {
+    font-weight: 700;
+    color: #777; }
+
+.com-bottom-table {
+  position: relative;
+  margin-top: 15px; }
+  .com-bottom-table .table-names {
+    position: absolute;
+    top: 15px;
+    left: 11px;
+    border: 1px solid #a3a3a3;
+    background-color: #f3f3f3;
+    border-radius: 3px; }
+    .com-bottom-table .table-names .name {
+      display: inline-block;
+      height: 30px;
+      line-height: 30px;
+      padding: 0px 10px;
+      color: #0066c0;
+      font-weight: 600;
+      font-size: 14px;
+      cursor: pointer; }
+      .com-bottom-table .table-names .name:not(:last-child) {
+        border-right: 1px solid #a3a3a3; }
+      .com-bottom-table .table-names .name:hover {
+        background-color: #fff; }
+    .com-bottom-table .table-names .arrow-after::after {
+      background-color: #fff;
+      box-shadow: 1px 1px 0px 0px #777; }
+    .com-bottom-table .table-names .hover-bg-clr {
+      background-color: #fff;
+      color: #111; }
+  .com-bottom-table .table-ordered-items {
+    display: none; }
+  .com-bottom-table .table-earnings {
+    display: none; }
+  .com-bottom-table .table-link-perform {
+    display: none; }
+  .com-bottom-table .showing-table {
+    display: block; }
+  .com-bottom-table .main-part {
+    padding-top: 20px; }
+    .com-bottom-table .main-part .header .group-by {
+      text-align: right; }
+      .com-bottom-table .main-part .header .group-by .new span {
+        color: #c45500;
+        font-weight: 700;
+        font-size: 12px; }
+      .com-bottom-table .main-part .header .group-by .tag {
+        color: #333;
+        font-weight: 700;
+        font-size: 12px; }
+      .com-bottom-table .main-part .header .group-by .tracking-id {
+        border: 1px solid #a3a3a3;
+        background-color: #f3f3f3;
+        border-radius: 3px;
+        padding: 5px 10px;
+        position: relative;
+        cursor: pointer; }
+        .com-bottom-table .main-part .header .group-by .tracking-id:hover .dd-box {
+          display: block; }
+        .com-bottom-table .main-part .header .group-by .tracking-id i {
+          color: #737373;
+          padding-left: 10px;
+          font-size: 12px; }
+        .com-bottom-table .main-part .header .group-by .tracking-id .dd-box {
+          display: none;
+          width: 100%;
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          border: 1px solid #ddd;
+          box-shadow: 0 0 2px 2px #f3f3f3;
+          background-color: #fff;
+          padding: 5px 0;
+          z-index: 2; }
+          .com-bottom-table .main-part .header .group-by .tracking-id .dd-box > span {
+            display: block;
+            border: 1px solid transparent;
+            text-align: left;
+            padding-left: 10px;
+            font-weight: 600; }
+            .com-bottom-table .main-part .header .group-by .tracking-id .dd-box > span:hover {
+              border: 1px solid #a3a3a3;
+              background-color: #f3f3f3; }
+          .com-bottom-table .main-part .header .group-by .tracking-id .dd-box .dd-selected {
+            background-color: #f6f6f6;
+            border: 1px solid #a3a3a3; }
+    .com-bottom-table .main-part .tbl {
+      margin-top: 25px;
+      position: relative; }
+      .com-bottom-table .main-part .tbl .bottom-glasspane {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.5);
+        display: block; }
+      .com-bottom-table .main-part .tbl .table-loader {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: -50%, -50%;
+        display: block; }
+      .com-bottom-table .main-part .tbl table {
+        width: 100%; }
+        .com-bottom-table .main-part .tbl table tr th {
+          vertical-align: top;
+          background-color: #f3f3f3;
+          color: #111;
+          font-weight: 600;
+          font-size: 12px;
+          width: 13%;
+          padding: 5px 0 5px 10px;
+          border-left: 1px solid #d0d0d0; }
+          .com-bottom-table .main-part .tbl table tr th:first-child {
+            width: 35%; }
+          .com-bottom-table .main-part .tbl table tr th:last-child {
+            border-right: 1px solid #d0d0d0; }
+          .com-bottom-table .main-part .tbl table tr th span {
+            width: 80%;
+            display: inline-block; }
+          .com-bottom-table .main-part .tbl table tr th i {
+            float: right;
+            color: #999;
+            padding-right: 10px;
+            position: relative;
+            top: 3px; }
+        .com-bottom-table .main-part .tbl table tr {
+          border-top: 1px solid #d0d0d0; }
+          .com-bottom-table .main-part .tbl table tr:not(:first-child) {
+            border-top: 1px solid #d0d0d0; }
+          .com-bottom-table .main-part .tbl table tr:hover {
+            background-color: #f9f9f9; }
+          .com-bottom-table .main-part .tbl table tr:last-child {
+            border-bottom: 1px solid #d0d0d0; }
+          .com-bottom-table .main-part .tbl table tr td {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 10px;
+            border-left: 1px solid #d0d0d0;
+            font-size: 12px;
+            font-weight: 600; }
+            .com-bottom-table .main-part .tbl table tr td:last-child {
+              border-right: 1px solid #d0d0d0; }
+    .com-bottom-table .main-part .footer {
+      margin-top: 25px; }
+      .com-bottom-table .main-part .footer .range-controls .showing {
+        font-weight: 600;
+        font-size: 12px; }
+        .com-bottom-table .main-part .footer .range-controls .showing span.range {
+          font-weight: 700; }
+      .com-bottom-table .main-part .footer .range-controls .results-per-page .btn {
+        border: 1px solid #a3a3a3;
+        background-color: #f3f3f3;
+        margin-left: 50px;
+        margin-right: 5px;
+        border-radius: 3px;
+        position: relative; }
+        .com-bottom-table .main-part .footer .range-controls .results-per-page .btn:hover .dd-box {
+          display: block; }
+        .com-bottom-table .main-part .footer .range-controls .results-per-page .btn .amount {
+          font-weight: 600; }
+        .com-bottom-table .main-part .footer .range-controls .results-per-page .btn i {
+          color: #555;
+          padding-left: 10px;
+          font-size: 12px; }
+        .com-bottom-table .main-part .footer .range-controls .results-per-page .btn .dd-box {
+          display: none;
+          width: 100%;
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          border: 1px solid #ddd;
+          box-shadow: 0 0 2px 2px #f3f3f3;
+          background-color: #fff;
+          padding: 5px 0; }
+          .com-bottom-table .main-part .footer .range-controls .results-per-page .btn .dd-box:hover {
+            display: block; }
+          .com-bottom-table .main-part .footer .range-controls .results-per-page .btn .dd-box > span {
+            display: block;
+            border: 1px solid transparent;
+            text-align: left;
+            padding-left: 10px;
+            font-weight: 600; }
+            .com-bottom-table .main-part .footer .range-controls .results-per-page .btn .dd-box > span:hover {
+              border: 1px solid #a3a3a3;
+              background-color: #f3f3f3; }
+          .com-bottom-table .main-part .footer .range-controls .results-per-page .btn .dd-box .dd-selected {
+            background-color: #f6f6f6;
+            border: 1px solid #a3a3a3; }
+      .com-bottom-table .main-part .footer .range-controls .results-per-page span {
+        position: relative; }
+      .com-bottom-table .main-part .footer .btn-controls .prev {
+        border: 1px solid #e3e3e3;
+        background-color: #f5f5f5;
+        padding: 5px 10px;
+        margin-right: 10px;
+        border-radius: 3px; }
+        .com-bottom-table .main-part .footer .btn-controls .prev span {
+          padding-right: 10px; }
+      .com-bottom-table .main-part .footer .btn-controls .next {
+        border: 1px solid #e3e3e3;
+        background-color: #f5f5f5;
+        padding: 5px 10px;
+        border-radius: 3px; }
+        .com-bottom-table .main-part .footer .btn-controls .next span {
+          padding-left: 10px; }
+  .com-bottom-table .notes .header {
+    font-weight: 700;
+    padding-bottom: 10px;
+    color: #444; }
+  .com-bottom-table .notes .tables {
+    padding-bottom: 15px; }
+    .com-bottom-table .notes .tables table tr:first-child {
+      padding-right: 20px;
+      border-bottom: none; }
+    .com-bottom-table .notes .tables table tr:last-child td {
+      padding-bottom: 0px;
+      border-bottom: none; }
+    .com-bottom-table .notes .tables table tr td {
+      vertical-align: top;
+      color: #666;
+      font-weight: 600;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #e3e3e3; }
+      .com-bottom-table .notes .tables table tr td:nth-of-type(2) {
+        width: 20%; }
+      .com-bottom-table .notes .tables table tr td:first-child {
+        padding-right: 20px;
+        border-bottom: none; }
+      .com-bottom-table .notes .tables table tr td:last-child {
+        padding-right: 20px; }
+      .com-bottom-table .notes .tables table tr td a {
+        color: #0066c3; }
+        .com-bottom-table .notes .tables table tr td a:hover {
+          color: #c45500; }
+
+.dis-none {
+  display: none; }

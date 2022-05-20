@@ -1,0 +1,32 @@
+.com-bottom-info {
+  margin-top: -15px; }
+  .com-bottom-info .com-chart-bottom .box {
+    padding: 10px; }
+    .com-bottom-info .com-chart-bottom .box:not(:first-child) {
+      border-left: 1px solid #ddd; }
+    .com-bottom-info .com-chart-bottom .box .title {
+      font-weight: 600;
+      padding-bottom: 30px;
+      color: #333; }
+    .com-bottom-info .com-chart-bottom .box .amount {
+      font-weight: 700; }
+    .com-bottom-info .com-chart-bottom .box:last-child {
+      position: relative; }
+      .com-bottom-info .com-chart-bottom .box:last-child .note {
+        position: absolute;
+        top: 30px;
+        left: 10px;
+        color: #555;
+        font-weight: 600;
+        font-size: 12px; }
+  .com-bottom-info .com-chart-bottom .bonus .title span {
+    position: relative;
+    top: -2px;
+    color: #c45500;
+    font-size: 11px;
+    font-weight: 700; }
+  .com-bottom-info .com-chart-bottom .total-earnings .title {
+    font-weight: 700; }
+  .com-bottom-info .com-chart-bottom .total-earnings .note i {
+    font-weight: 700;
+    color: #777; }

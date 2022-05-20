@@ -1,0 +1,166 @@
+.mainbody{
+    min-height: 500px;
+}
+.div1{
+    height: 136px;
+    background-color: white;
+    border: 1px solid rgb(223, 221, 221);
+    padding: 14px;
+    box-shadow: 0px 1px 0px 0px  rgb(221, 221, 221)
+
+}
+.div1 > h2{
+    color: #C45500;
+}
+.div1 > p{
+    padding-top: 5px;
+    font-size: 1em;
+    line-height: 19px;
+}
+
+/* div 2 css */
+
+.div2{
+    margin-top: 19px;
+    height: 325px;
+    background-color: white;
+    border: 1px solid rgb(223, 221, 221);
+    padding: 14px; 
+    box-shadow: 0px 1px 0px 0px  rgb(221, 221, 221)  
+}
+.div2 > h2{
+    color: #C45500;
+}
+.div2 > p{
+    padding-top: 5px;
+    font-size: 1em;
+    line-height: 19px;
+    margin-top: 10px;
+}
+.div2 > p > a:hover{
+    color: #C45500;
+}
+
+/* div 3 css style */
+.div3{
+    margin-top: 19px;
+    height: 403px;
+    background-color: white;
+    border: 1px solid rgb(223, 221, 221);
+    padding: 14px; 
+    box-shadow: 0px 1px 0px 0px  rgb(221, 221, 221)  
+}
+.div3 > h2{
+    color: #C45500;
+}
+.div3 > p{
+    padding-top: 5px;
+    font-size: 1em;
+    line-height: 19px;
+    margin-top: 10px;
+}
+.div3 > p > a:hover{
+    color: #C45500;
+}
+.table{
+    margin-top: 36px;
+    width: 700px;
+}
+.tablehed{
+    background-color: #D3D3D3;
+}
+.tablehed tr{
+height: 51px;
+text-align: justify;
+padding-bottom: 20px;
+}
+
+.btne{
+    width: 250px;
+    height: 30px;
+    background-color: rgb(243, 223, 187);
+    border: 1px solid rgb(207, 207, 207);
+    border-radius: 2px;
+    text-align: center;
+    padding-top: 3px;
+    color: rgb(73, 73, 73);
+}
+
+
+/* div 4 css style */
+.div4{
+    margin-top: 19px;
+    height: 250px;
+    border: 1px solid rgb(223, 221, 221);
+    box-shadow: 0px 1px 0px 0px  rgb(221, 221, 221)  
+}
+.col1{
+    width: calc(33.5% - 10px);
+    height: 100%;
+    float: left;
+    margin-right: 10px;
+    background-color: white;
+    padding: 17px;
+}
+.col1 > h3{
+    color: #C45500;
+}
+.col1 > p{
+    margin-top: 15px;
+    font-size: 1em;
+    line-height: 19px;
+}
+
+
+.col2{
+    width: calc(33.5% - 10px);
+    height: 100%;
+    float: left;
+    margin-right: 10px;
+    background-color: white;
+    padding: 17px;
+}
+.col2 > h3{
+    color: #C45500;
+}
+.col2 > p{
+    margin-top: 15px;
+    font-size: 1em;
+    line-height: 19px;
+}
+
+
+
+.col3{
+    width: 33%;
+    height: 100%;
+    float: left;
+    background-color: white;
+    padding: 17px;
+}
+.col3 > h3{
+    color: #C45500;
+}
+.col3 > p{
+    margin-top: 15px;
+    font-size: 1em;
+    line-height: 19px;
+}
+
+/* div 5 css style */
+.div5{
+    margin-top: 19px;
+    height: 198px;
+    border: 1px solid rgb(223, 221, 221);
+    box-shadow: 0px 1px 0px 0px  rgb(221, 221, 221);
+    background-color: white;  
+}
+.div5 > h5{
+    color: #C45500;
+    padding: 10px;
+    border-bottom: 1px solid rgb(211, 209, 209);
+}
+.col{
+    margin-left: 46px;
+    margin-top: 18px;
+}

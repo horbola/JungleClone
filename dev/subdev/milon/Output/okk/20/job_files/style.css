@@ -1,0 +1,21 @@
+.mainbody{
+    min-height: 600px;
+    background-color: white;
+    border:1px solid rgb(214, 213, 213);
+    padding: 15px;
+    
+}
+.mainbody > p{
+    font-size: 1.10rem;
+    line-height: 19px;
+}
+.btn{
+    width: 163px;
+    height: 32px;
+    background-color: #f8ce62;
+    border: 1px solid gray;
+    
+}
+.mainbody > ul li{
+    margin-left: 15px;
+}

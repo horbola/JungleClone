@@ -1,0 +1,65 @@
+
+.boun-bottom-table.page-card-padded
+    .table-names
+        .wrapper
+            .name #[span.tag Bounties] #[span.date Nov 08 2020]
+    .table-bounties.full-table.showing-table
+        .main-part
+            .header
+                .group-by
+                    span.new 
+                        <img src="/img/reports/air-plane.png" alt=""/>
+                        span  New: 
+                    span.tag Group By: 
+                    span.tracking-id
+                        span.tag Tracking ID
+                        span #[i.fa.fa-chevron-down]
+                        span.dd-box
+                            span.dd-selected Tracking ID
+                            span Date
+                            span None
+            .tbl
+                .bottom-glasspane
+                .table-loader
+                    <img src="/img/reports/chart-loader.gif" alt=""/>
+                include tables/bounties/seven-day-table
+                include tables/bounties/thirty-day-table
+                include tables/bounties/this-week-table
+                include tables/bounties/last-week-table
+                include tables/bounties/this-month-table
+                include tables/bounties/last-month-table
+                include tables/bounties/this-quarter-table
+                include tables/bounties/last-quarter-table
+                include tables/bounties/this-year-table
+                include tables/bounties/last-year-table
+            .footer.d-flex.justify-content-between
+                .range-controls
+                    span.showing (Showing #[span.range 1 - 5] Items)
+                    span.results-per-page
+                        span.btn 
+                            span.amount 25
+                            i.fa.fa-chevron-down
+                            span.dd-box
+                                span.dd-selected 25
+                                span 50
+                                span 75
+                                span 100
+                        span results per page
+
+                .btn-controls
+                    span.prev
+                        span ←
+                        span.tag Prev
+                    span.next
+                        span.tag Next
+                        span →
+                    
+
+.boun-bottom-suggest.page-card-padded
+    .header Earn More from these Bounties
+    .main.d-flex.justify-content-between
+        .image <img src="/img/reports/bounty-amazonstudent.gif" alt=""/>
+        .image <img src="/img/reports/bounty-audiobooks.jpg" alt=""/>
+        .image <img src="/img/reports/bounty-primegifting.png" alt=""/>
+        .image <img src="/img/reports/summary-evergreen.png" alt=""/>
+        .image <img src="/img/reports/summary-weddingregistry.png" alt=""/>

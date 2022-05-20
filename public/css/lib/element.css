@@ -1,0 +1,28 @@
+
+.grey-button {
+    background: #e7e9ec;
+    border-radius: 3px;
+    border-color: #ADB1B8 #A2A6AC #8D9096;
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+    /*if this prperty is applied alone without 'verticle align: middle' */
+    /*then this span gets raised*/
+    display: inline-block;
+    vertical-align: middle; 
+    padding: 0 10px;
+}
+
+
+.arrow-after::after {
+    display: inline-block;
+    content: "";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    background-color: #f3f3f3;
+    box-shadow: 1px 1px 0px 0px #a3a3a3;
+    transform: rotate(45deg) translateX(-50%); 
+}

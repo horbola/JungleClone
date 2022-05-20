@@ -1,0 +1,22 @@
+extends ../../../layout/visitor-2/visitor-2
+
+
+block pageRes
+    link(href="/css/lib/lib.css" rel="stylesheet" type="text/css")
+    link(rel='stylesheet' href='/css/page/home/visitor-home-2/visitor-home-2-s.css')
+    // script(src="/js/page/home/visitor-home-2.js" type="module")
+    script(src="/#{jsRes.visitorHome2}" type="module")
+
+block content
+    include wall-photo
+    include wellcome
+    include options
+    include carousel
+    include faq
+    include wall-photo-bottom
+    
+block pageResBottom
+    link(href="/vendor/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css" rel="stylesheet" type="text/css")
+    link(href="/vendor/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css" rel="stylesheet" type="text/css")
+    script(src="/vendor/OwlCarousel2-2.3.4/dist/owl.carousel.min.js" type="text/javascript")
+    

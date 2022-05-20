@@ -1,0 +1,196 @@
+@import "../../../lib/scss/_lib.scss";
+
+.ac-card {
+    border: 1px solid #DDD;
+    background-color: #fff;
+    margin-bottom: 15px;
+    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.05);
+    border-radius: 2px;
+    height: 90px;
+    
+}
+.ac-card-title {
+    color: #000000;
+    font-size: 1.4em;
+    padding: 10px 5px 5px 10px;
+    position: relative;
+}
+.b{
+    font-size: 1.1em;
+}
+.ac-card-title > p{
+    float: right;
+    font-size: 13px;
+}
+.panels{
+    float: right;
+    font-size: 13px;
+    display: none;
+    border: 1px soid gray;
+}
+
+.option{
+    color: rgb(104, 127, 230);
+    width: 100px;
+}
+.ac-card-texte{
+    padding: 13px 5px 5px 10px;
+}
+.ac-card-texte > p{
+    font-size: 14px;
+}
+.ac-body{
+    border: 1px solid #DDD;
+    background-color: #fff;
+    margin-bottom: 15px;
+    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.05);
+    border-radius: 2px;
+    height: 310px;
+    padding: 20px;
+}
+.ac-body > h4{
+    color: #C45500;
+    font-size: 1.25rem;
+}
+.ac-body > p{
+    font-size: 13px;
+    line-height : 18px;
+}
+.ac-body1{
+    height: 97px;
+    background-color: #F3F3F3;
+    margin-top: 20px;
+    line-height: 14px;
+}
+.ac-body2{
+    border: 1px solid rgb(170, 169, 169);
+    width: 145px;
+    height: 30px;
+    background-color: #DEE1E6;
+}
+.ac-body3{
+    padding: 10px;
+    margin-left: 340px;
+    float: left;
+    margin-top: 10px;
+}
+.ac-body4{
+    padding: 10px;
+    float: left;
+    margin-top: 10px;
+}
+#infel{
+    padding: 10px;
+    float: left;
+    border: 1px solid gray;
+    width: 145px;
+    height: 30px;
+    
+}
+.btns{
+    background-color: #5C6169;
+    width: 39px;
+    height: 30px;
+    margin-left: 3px;
+    color: white;
+    font-weight: bold;
+}
+
+/* carosel css */
+
+.MultiCarousel { float: left; overflow: hidden; padding: 15px; width: 100%; position:relative; }
+.MultiCarousel .MultiCarousel-inner { transition: 1s ease all; float: left; }
+.MultiCarousel .MultiCarousel-inner .item { float: left;}
+.MultiCarousel .MultiCarousel-inner .item > div { padding:10px; margin:10px; background:#ffffff; color:#666;}
+.MultiCarousel .leftLst, .MultiCarousel .rightLst { position:absolute; height: 52px; width: 30px; top:calc(50% - 20px); }
+.MultiCarousel .leftLst { left:0; }
+.MultiCarousel .rightLst { right:0; }
+.MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over { pointer-events: none; background:#ccc; }
+
+.card-img-top{
+    height: 133px;
+    width: 130px;
+    border: 1px solid gray;
+}
+
+
+
+.ac-card-header-secondary{
+    height: 354px;
+    /* padding: 20px; */
+    background-color: white;
+    border: 1px solid gray;
+}
+.ac-top{
+    height: 52px;
+    padding: 20px;
+}
+
+.ac-display-inline-block {
+    display: inline-block;
+}
+
+.ac-top > h4{
+    color: #C45500;
+    font-size: 1.25rem;
+}
+.ac-float-r{
+    float: right;
+}
+
+.a-native-dropdown{
+    background-color: #DDE0E5;
+    width: 166px;
+    height: 30px;
+    border: 1px solid gray;
+    padding: 5px;
+}
+
+.a-form-label {
+    font-weight: 700;
+}
+.ac-label-spacing {
+    padding-right: 10px;
+}
+.a-button-dropdown .a-button-text {
+    /* padding-right: 26px; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+    z-index: 10;
+}
+.a-button-text {
+    background-color: transparent;
+    border: 0;
+    display: block;
+    font-size: 13px;
+    line-height: 29px;
+    margin: 0;
+    outline: 0;
+    padding: 0 10px 0 11px;
+    text-align: center;
+    white-space: nowrap;
+}
+/* .a-button .a-button-text {
+    color: #111;
+} */
+.a-button-text {
+    background-color: transparent;
+    border: 0;
+    display: block;
+    font-size: 13px;
+    line-height: 29px;
+    margin: 0;
+    outline: 0;
+    padding: 0 10px 0 11px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.ac-bottom{
+    
+    min-height: 285px;
+}
+
+
+

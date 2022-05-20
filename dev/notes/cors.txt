@@ -1,0 +1,7 @@
+i am compelled by netbeans to set up site root folder or source folder which is inside the project root folder to begin an
+html/js app. netbeans takes the index.js file from only site root folder.
+
+if i set the porject folder as site root in this netbeans html/js application then cross origin problem occures in browser.
+that means if any file residing one level up other then the site root folder then that file such as any 'js module file'
+doesn't get loaded in the broser and browser says that this is due to cross origin problem.
+

@@ -1,0 +1,18 @@
+extends ../../../layout/main/main
+
+
+block pageRes
+    link(href="/css/lib/lib.css" rel="stylesheet" type="text/css")
+    link(rel='stylesheet' href='/css/page/home/asso-home/asso-home-s.css')    
+    // script(src="/js/page/home/asso-home.js" type="module")
+    script(src="/#{jsRes.assoHome}" type="module")
+
+block content
+    include carousel-top
+    include product-link-search
+    include earnings-overview
+    include carousel-products
+    
+block pageResBottom
+    script(src="/vendor/konva.js" type="text/javascript")
+        

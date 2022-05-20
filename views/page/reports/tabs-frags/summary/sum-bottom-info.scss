@@ -1,0 +1,308 @@
+@import "../../../../lib/scss/_lib.scss";
+
+.sum-bottom-info {
+    margin-top: 15px;
+    .left-part {
+        flex-basis: 50%;
+        margin-right: 10px;
+        .com-sum {
+            .header {
+                font-size: 14px;
+                font-weight: 700;
+                color: #c45500; 
+                padding-top: 10px;
+                padding-bottom: 15px;
+            }
+            .main {
+                & > * {
+                    flex-basis: 100%;
+                    flex-grow: 1;
+                    flex-shrink: 1;
+                }
+                .box {
+                    border: 1px solid #e0e0e0;
+                    border-right: none;
+                    padding: 10px;
+                    &:first-child {
+                        border-left: none;
+                        margin-left: -11px;
+                    }
+                    &:last-child {
+                        border-right: none;
+                        margin-right: -11px;
+                    }
+                }
+                .title {
+                    padding-bottom: 30px;
+                    font-size: 13px;
+                    font-weight: 600;
+                    color: #666;
+                }
+                .amount {
+                    font-size: 13px; 
+                    font-weight: 600;
+                    color: #444;
+                }
+                .clicks {
+                    .title {
+                    }
+                    .amount {
+                    }
+                }
+                .ordered {
+                    .title {
+                    }
+                    .amount {
+                    }
+                }
+                .shipped {
+                    .title {
+                    }
+                    .amount {
+                    }
+                }
+                .bonus {
+                    .title {
+                    }
+                    .amount {
+                    }
+                }
+                .conversion {
+                    .title {
+                    }
+                    .amount {
+                    }
+                }
+            }
+            .footer {
+                text-align: center;
+                padding-top: 10px;
+                padding-bottom: 5px;
+                .total {
+                    padding-left: 30px;
+                    font-size: 18px;
+                    font-weight: 700;
+                    .tag {
+                        font-size: 12px;
+                        color: #777;
+                    }
+                }
+                .amount {
+                    float: right;
+                    padding-right: 15px;
+                    font-size: 17px;
+                    font-weight: 700;
+                }
+            }
+        }
+        .boun-sum {
+            font-size: 14px;
+            font-weight: 700;
+            color: #c45500; 
+            padding-top: 10px;
+            padding-bottom: 15px;
+            .header {
+                font-size: 14px;
+                font-weight: 700;
+                color: #c45500; 
+                padding-top: 10px;
+                padding-bottom: 15px;
+            }
+            .main {
+                border-top: 1px solid #e0e0e0;
+                margin-left: -11px;
+                margin-right: -11px;
+                .box {
+                    padding: 10px;
+                }
+                .title {
+                    padding-bottom: 30px;
+                    font-size: 13px;
+                    font-weight: 600;
+                    color: #888;
+                }
+                .amount {
+                    font-size: 13px; 
+                    font-weight: 600;
+                    color: #444;
+                }
+                .total-refs {
+                    flex-basis: 70%;
+                    border-right: 1px solid #e0e0e0;
+                    .title {
+                    }
+                    .amount {
+                    }
+                }
+                .total-earnings {
+                    flex-basis: 30%;
+                    .title {
+                        color: #444;
+                    }
+                    .amount {
+                        color: #009900; 
+                        font-size: 1.2em;
+                    }
+                }
+            }
+        }
+        .ear-sum {
+            .main {
+                .title {
+                    font-size: 14px;
+                    font-weight: 700;
+                    color: #c45500; 
+                    flex-basis: 70%;
+                    border-right: 1px solid #e0e0e0;
+                    padding: 10px;
+                    i {
+                        color: #666;
+                    }
+                }
+                .amount {
+                    flex-basis: 30%;
+                    font-size: 17px;
+                    font-weight: 700;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+    .right-part {
+        flex-basis: 50%;
+        margin-left: 10px;
+        .shopping-ads {
+            .header {
+                padding-top: 10px;
+                padding-bottom: 15px;
+                .ads {
+                    .title {
+                        font-size: 14px;
+                        font-weight: 700;
+                        color: #c45500; 
+                    }
+                    .tag {
+                        font-size: 11px;
+                        font-weight: 600;
+                        color: #666;
+                    }
+                }
+                .detail {
+                    text-align: right;
+                    .title {
+                        a {
+                            text-decoration: none;
+                            font-weight: 600;
+                            &:hover {
+                                color: #c45500;
+                            }
+                        }
+                    }
+                    .tag {
+                        font-size: 13px;
+                        font-weight: 600;
+                        color: #666;
+                    }
+                }
+            }
+            .main {
+                & > * {
+                    flex-basis: 100%;
+                    flex-grow: 1;
+                    flex-shrink: 1;
+                }
+                .box {
+                    border: 1px solid #e0e0e0;
+                    border-right: none;
+                    padding: 10px;
+                    &:first-child {
+                        border-left: none;
+                        margin-left: -11px;
+                    }
+                    &:last-child {
+                        border-right: none;
+                        margin-right: -11px;
+                    }
+                }
+                .title {
+                    padding-bottom: 30px;
+                    font-size: 13px;
+                    font-weight: 600;
+                    color: #666;
+                }
+                .amount {
+                    font-size: 13px; 
+                    font-weight: 600;
+                    color: #444;
+                }
+                .clicks {
+                    .title {
+                    }
+                    .amount {
+                    }
+                }
+                .ordered {
+                    .title {
+                    }
+                    .amount {
+                    }
+                }
+                .shipped {
+                    .title {
+                    }
+                    .amount {
+                    }
+                }
+                .bonus {
+                    .title {
+                    }
+                    .amount {
+                    }
+                }
+                .conversion {
+                    .title {
+                    }
+                    .amount {
+                    }
+                }
+            }
+        }
+        .feauted {
+            .header {
+                font-size: 14px;
+                font-weight: 700;
+                color: #c45500;
+                padding-bottom: 10px; 
+            }
+            .separator {
+                border-top: 1px solid #e0e0e0;
+                margin-left: -11px;
+                margin-right: -11px;
+                padding-bottom: 10px;
+            }
+            .main {
+                img {
+                    border: 1px solid transparent;
+                    width: 236px; 
+                    height: 196px;
+                    transition: all 200ms ease;
+                    -webkit-transition: all 200ms ease;
+                    -moz-transition: all 200ms ease;
+                    -ms-transition: all 200ms ease;
+                    -o-transition: all 200ms ease;
+                    &:hover {
+                        border: 1px solid #fbd084;
+                        box-shadow: 0px 1px 3px 3px rgba(0,0,0,0.05);
+                    }
+                }
+                .img-left {
+                    
+                }
+                .img-right {
+                    
+                }
+            }
+        }
+    }
+}
+    

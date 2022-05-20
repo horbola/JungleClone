@@ -1,0 +1,55 @@
+.txt{
+    font-size: small;
+}
+.search{
+    width: 96%;
+    margin: 0 auto;
+    border: 1px solid gray;
+
+}
+.dark{
+    background-color: #4E545B;
+    color: white;
+}
+.row{
+    background-color: white;
+}
+.col{
+    margin: 25px;
+}
+.col > h2{
+    color: rgb(173, 86, 4);
+    font-size: 22px;
+}
+.col > p{
+    font-size: small;
+}
+.lavel{
+    margin-top: 50px;
+}
+.lavel > b{
+    color: rgb(150, 148, 148);
+}
+.btndis{
+    border: 0.5px solid gray;
+}
+.lavel2 > b{
+    color: rgb(150, 148, 148);
+}
+.lavel3 > b{
+    color: rgb(150, 148, 148);
+}
+.card-body{
+    color: gray;
+}
+.card-body > p{
+    font-size: small;
+}
+.high{
+    height: 306px;
+}
+.btn1{
+    background-color: #EFBF44;
+    border: 1px solid gray;
+    margin-left: 500px;
+}

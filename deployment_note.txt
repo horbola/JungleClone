@@ -1,0 +1,7 @@
+to make it live accessible from server we must change the following variables.
+1. in app.js change:
+    a) appUrl,
+    b) appName,
+    c) jsRes
+2. in reports.js change:
+    a) appUrlLocal

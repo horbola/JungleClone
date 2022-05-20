@@ -1,0 +1,58 @@
+@import "../../../../lib/scss/_lib.scss";
+
+ .com-bottom-info {
+     margin-top: -15px;
+    .com-chart-bottom {
+        .box {
+            padding: 10px;
+            &:not(:first-child) {
+                border-left: 1px solid #ddd;
+            }
+            .title {
+                font-weight: 600;
+                padding-bottom: 30px;
+                color: #333;
+            }
+            .amount {
+                font-weight: 700;
+            }
+            &:last-child {
+                position: relative;
+                .note {
+                    position: absolute;
+                    top: 30px;
+                    left: 10px; 
+                    color: #555;
+                    font-weight: 600;
+                    font-size: 12px;
+                }
+            }
+        }
+        .bonus {
+            .title {
+                span {
+                    position: relative;
+                    top: -2px;
+                    color: #c45500;
+                    font-size: 11px;
+                    font-weight: 700;
+                }
+            }
+            .amount {}
+        }
+        .total-earnings {
+            .title {
+                font-weight: 700;
+            }
+            .note {
+                i {
+                    font-weight: 700;
+                    color: #777;
+                }
+            }
+            .amount {}
+        }
+    }
+}
+
+

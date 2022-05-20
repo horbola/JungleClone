@@ -1,0 +1,25 @@
+doctype html
+html
+  head
+    if title
+        title= title
+    else
+        title Amazon.com Associates
+    link(rel='stylesheet', href= jsRes.FAcss)
+    link(rel='stylesheet', href= jsRes.Bcss)
+    <link rel="shortcut icon" type="image/ico" href="/img/favicon/browser-tab-icon.png"/>
+    block pageRes
+  body
+    include header
+    .container-fluid
+        block content
+    include footer
+    
+    script(src= jsRes.jquery type="text/javascript")
+    script(src= jsRes.popper type="text/javascript")
+    script(src= jsRes.Bjs type="text/javascript")
+    block pageResBottom
+    
+    
+    
+

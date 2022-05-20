@@ -1,0 +1,17 @@
+extends ../layout/main/whole
+
+
+block pageRes
+    link(href="/dev/css/singlets/chart-test.css" rel="stylesheet" type="text/css")
+    script(src="/dev/js/mod/singlets/reports/report-chart.js" type="module")
+
+block content
+    .canvas-area
+        .popup
+            .title july 29 2020
+            ul
+                li #[span.disc] #[span.type Earnings: ] #[span.value $0]
+                li #[span.disc] #[span.type Clicks: ] #[span.value $0]
+                li #[span.disc] #[span.type Ordered Items: ] #[span.value $0]
+        canvas#canvas(width="700" height="400")
+    

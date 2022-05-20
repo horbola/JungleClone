@@ -1,0 +1,17 @@
+neteans wants a site root folder or src folder specified but not mandatory. the same is mandatory
+for the html/js application.
+
+in both case if not site root folder is specified then the project root folder is assumed the site
+root folder.
+
+scss source to compile with ruby must be in the site root directory and needs to be specified in the
+css preprocessor panel without the site root directory name but with slash. for example..
+
+site root and project root: AmazAffCloneNode
+scss folder is in: AmazAffCloneNode/public/css/scss and AmazAffCloneNode/dev/experim/public/dev/css/scss
+
+so the path must be: /public/css/scss and /dev/experim/public/dev/css/scss
+
+when site root folder was just public directory inside AmazAffCloneNode then
+in case of the second folder the path reference to it with uplift (../) notation didn't work. then 
+i had to change the site folder from 'public' to 'AmazAffCloneNode'

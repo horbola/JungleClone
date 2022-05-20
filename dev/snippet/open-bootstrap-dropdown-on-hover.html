@@ -1,0 +1,156 @@
+
+
+    <!DOCTYPE html>
+
+    <html lang="en">
+
+    <head>
+
+    <meta charset="UTF-8">
+
+    <title>Activate Bootstrap Dropdown with Hover</title>
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <style type="text/css">
+
+    @media screen and (min-width: 768px){
+
+      .dropdown:hover .dropdown-menu, .btn-group:hover .dropdown-menu{
+
+            display: block;
+
+        }
+
+        .dropdown-menu{
+
+            margin-top: 0;
+
+        }
+
+        .dropdown-toggle{
+
+            margin-bottom: 2px;
+
+        }
+
+        .navbar .dropdown-toggle, .nav-tabs .dropdown-toggle{
+
+            margin-bottom: 0;
+
+        }
+
+    }
+
+    </style>
+
+    <script type="text/javascript">
+
+    $(document).ready(function(){
+
+        $(".dropdown, .btn-group").hover(function(){
+
+            var dropdownMenu = $(this).children(".dropdown-menu");
+
+            if(dropdownMenu.is(":visible")){
+
+                dropdownMenu.parent().toggleClass("open");
+
+            }
+
+        });
+
+    });     
+
+    </script>
+
+    </head>
+
+    <body>
+
+    <!--Navbar with dropdown menu-->
+
+    <nav id="myNavbar" class="navbar navbar-default" role="navigation">
+
+        <!-- Brand and toggle get grouped for better mobile display -->
+
+        <div class="container">
+
+            <div class="navbar-header">
+
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+
+                    <span class="sr-only">Toggle navigation</span>
+
+                    <span class="icon-bar"></span>
+
+                    <span class="icon-bar"></span>
+
+                    <span class="icon-bar"></span>
+
+                </button>
+
+                <a class="navbar-brand" href="#">Brand</a>
+
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                <ul class="nav navbar-nav">
+
+                    <li><a href="#">Home</a></li>
+
+                    <li><a href="#">Profile</a></li>
+
+                    <li class="dropdown">
+
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Messages <b class="caret"></b></a>
+
+                        <ul class="dropdown-menu">
+
+                            <li><a href="#">Inbox</a></li>
+
+                            <li><a href="#">Drafts</a></li>
+
+                            <li><a href="#">Sent Items</a></li>
+
+                            <li class="divider"></li>
+
+                            <li><a href="#">Trash</a></li>
+
+                        </ul>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    </body>
+
+    </html>
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    

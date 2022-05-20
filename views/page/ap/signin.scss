@@ -1,0 +1,271 @@
+@import "../../lib/scss/_lib.scss";
+
+body, html {
+    box-sizing: border-box;
+    overflow-x: auto; 
+    padding: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+    outline: none;
+    border: none;
+    padding: 0; 
+}
+
+
+header {
+    margin-bottom: 18px!important;
+    text-align: center; 
+    img {
+        width: 100px;
+        height: 31px; 
+    }
+}
+
+.signin {
+    width: 350px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    font-family: "Amazon Ember",Arial,sans-serif;
+    .err-msg {
+        padding: 14px 18px;
+        background-color: #fff;
+        border: 1px solid red;
+        border-radius: 4px;
+        box-shadow: 0 0 0 4px #fcf4f4 inset;
+        margin-bottom: 15px;
+        display: flex;
+        .err-msg_icon {
+            color: red;
+            background-color: white;
+            flex-basis: 10%;
+            margin-right: 10px;
+        }
+        .err-msg_detail {
+            flex-basis: 90%;
+            .err-msg_title {
+                font-weight: 500;
+                font-size: 17px;
+                color: #c40000;
+                margin-bottom: 5px;
+            }
+            .err-msg_descrip {
+                font-size: 13px;
+                font-weight: 500;
+            }
+        }
+    }
+    
+    &__main-box {
+        padding: 20px 25px;
+        border-radius: 4px;
+        border: 1px #ddd solid;
+        
+        .signin__email input, .signin__password input {
+            font-size: 13px;
+            vertical-align: middle;
+            transition: all 100ms linear;
+            color: #111;
+            border: 1px solid #a6a6a6;
+            border-top-color: #949494;
+            border-radius: 3px;
+            box-shadow: 0 1px 0 rgba(255,255,255,.5),0 1px 0 rgba(0,0,0,.07) inset;
+            outline: 0;
+            height: 31px;
+            padding: 3px 7px;
+            line-height: normal;
+            width: 100%;
+        }
+        
+        .signin__email input:focus, .signin__password input:focus, {
+            border-color: #e77600;
+            box-shadow: 0 0 3px 2px rgba(228,121,17,.5);
+        }
+
+        
+        .signin__email label, .signin__password label, .signin__password a {
+            font-size: 13px;
+            line-height: 19px;
+            color: #111;
+            font-family: "Amazon Ember",Arial,sans-serif;
+            display: block;
+            padding-left: 2px;
+            padding-bottom: 2px;
+            font-weight: 700;
+        }
+        
+        h4 {
+            color: #111;
+            padding-bottom: 4px;
+            font-weight: 400;
+            font-size: 28px;
+            line-height: 1.2;
+            margin-bottom: 10px!important;
+            font-family: "Amazon Ember",Arial,sans-serif;
+        }
+        @at-root .signin__email {
+            margin-bottom: 15px;
+            label {
+               
+            }
+            input {
+                
+            }
+        }
+        @at-root .signin__password {
+            margin-bottom: 20px;
+            .signin__row {
+                display: flex;
+                justify-content: space-between;
+                
+                label {}
+                a {
+                    font-weight: 400;
+                    text-decoration: none;
+                    color: #0066c0;
+                    &:hover {
+                        color: #a88734;
+                        text-decoration: underline;
+                    }
+                }
+            }
+                
+            input {}
+        }
+        button {
+            width: 100%!important;
+            height: 29px;
+            line-height: 29px;
+            font-size: 13px;
+            border: 1px solid;
+            border-color: #a88734 #9c7e31 #846a29;
+            border-radius: 3px;
+            background: linear-gradient(to bottom,#f7dfa5,#f0c14b);
+            box-shadow: 0 1px 0 rgba(255,255,255,.4) inset;
+            transition: all 100ms linear;
+            cursor: pointer;
+            display: block;
+            outline: 0;
+            padding: 0 10px 0 11px;
+            text-align: center;
+            color: #111;
+        }
+        p {
+            color: #111;
+            margin-top: 18px!important;
+            font-size: 12px!important;
+            line-height: 1.5!important;
+            a {
+                color: #0066c0;
+                text-decoration: none;
+            }
+        }
+        @at-root .signin__keeping-signin {
+            font-size: 13px;
+            line-height: 19px;
+            color: #111;
+            width: 100%;
+            margin-top: 18px!important;
+            margin-bottom: 25px;
+            label {
+                display: block;
+                padding-left: 2px;
+                padding-bottom: 2px;
+                font-weight: 500;
+                
+                input {
+                    /*has no effect*/
+                    transition: all 100ms linear;
+                    color: #111;
+                }
+                .raised {
+                    position: relative;
+                    top: -1px;
+                    a {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        @at-root .signin__new-to-amazon {
+            text-align: center;
+            margin-bottom: 14px;
+            line-height: 0;
+            position: relative;
+            
+            &::after {
+                content: "";
+                display: block;
+                width: 100%;
+                border-top: 1px solid #e7e7e7;
+                position: absolute;
+                top: 50%;
+                z-index: 1; 
+            }
+            
+            h5 {
+                line-height: 1;
+                font-size: 12px;
+                color: #767676;
+                background-color: #fff;
+                font-weight: 400;
+                z-index: 2;
+                position: relative;
+                display: inline-block;
+                padding: 0 8px 0 7px; 
+            }
+        }
+        
+        .signin__create-amazon-account {
+            border-radius: 3px;
+            border-color: #adb1b8 #a2a6ac #8d9096;
+            box-shadow: 0 1px 0 rgba(255,255,255,.6) inset;
+            background: linear-gradient(to bottom,#f7f8fa,#e7e9ec);
+            a {
+                text-decoration: none!important;
+                color: #111;
+            }
+        }
+    }
+}
+
+footer {
+    font-family: "Amazon Ember",Arial,sans-serif;
+    text-align: center;
+    color: #111;
+    margin-top: 26px!important;
+    margin-bottom: 30px;
+
+    .shadow {
+        margin-bottom: -18px;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.14), rgba(0, 0, 0, 0.03) 3px, transparent);
+        &::after {
+            content: ""; 
+            display: block;
+            width: 100%;
+            height: 44px;
+            background: linear-gradient(to right, #fff, rgba(255, 255, 255, 0), #fff);
+        }
+    }
+    .signin__top-row {
+        margin-bottom: 10px!important;
+        font-size: 11px!important;
+        line-height: 1.465!important;
+        span {
+            padding-left: 20px; 
+            padding-right: 20px; 
+            a {
+                text-decoration: none;
+                color: #0066c0;
+            }
+        }
+    }
+    .copyright {
+        font-size: 11px;
+        line-height: 19px; 
+        color: #555;
+    }
+}
+    
